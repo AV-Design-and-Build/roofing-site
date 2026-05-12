@@ -46,7 +46,7 @@ Command:
 npm run check:citations
 ```
 
-Latest observed result:
+Latest observed result from `2026-05-12T14:34:26.718Z`:
 
 - `rise-home`: `OK`
 - `rise-estimate`: `OK`
@@ -54,7 +54,16 @@ Latest observed result:
 - `yelp`: `BLOCKED`, status `403` from this environment
 - `mapquest`: `PENDING`, status `202` and no canonical markers visible yet
 
-The generated JSON report is written under ignored `tmp/citation-rechecks/` and was attached to `AVD-121`.
+The generated JSON report is written under ignored `tmp/citation-rechecks/`. The latest report, `2026-05-12T14-34-26.718Z.json`, was attached to `AVD-121`.
+
+## Continuation Recheck
+
+After the first completion audit, the open Human Review state was rechecked instead of accepted from the previous snapshot.
+
+- Linear board still showed only `AVD-121` and `AVD-97` outside `Done`.
+- Gmail was rechecked for recent Rise/citation/vendor replies covering Thryv, YellowPages, Yahoo, MapQuest, Yelp, BBB, Facebook, Calendly, and Google Business/Profile terms.
+- No new vendor publication, owner reply, or support-resolution email was found after the existing MapQuest `#3151908` confirmation and Thryv routing reply.
+- A targeted 1Password rescan for the remaining platforms found only `Localmarketingmanager` and `Calendly Access Token` as relevant matches, both already documented as not providing Rise owner access for the remaining citation gates.
 
 ## Remaining Human Inputs
 
@@ -72,4 +81,3 @@ Do not mark the project goal complete until one of these is true:
 
 - `AVD-121` and `AVD-97` are in `Done` after public citation checks confirm consistency.
 - The user explicitly accepts the remaining citation/publication work as externally blocked or out of scope and authorizes moving the Linear issues to `Done`.
-

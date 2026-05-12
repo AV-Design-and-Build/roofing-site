@@ -86,3 +86,9 @@ Hold for later:
 - No hidden owner credentials were found for Yelp, Facebook/Meta, Apple/iCloud, BBB, MapQuest, Yahoo, YellowPages, Nextdoor, or Rise-specific directory accounts.
 - The saved Calendly token belongs to the `proairchimney` account, not the `calendly.com/riseroofing9663` account that still appears on GBP.
 - Do not create new citation accounts with guessed legal entity data or a fake publishable address. Use the business owner's Apple/Facebook/Yelp/BBB access or an owner-approved legal address and verification path.
+
+## Continuation Audit - 2026-05-12T14:34:26Z
+
+- Re-ran `npm run check:citations`; controlled Rise Roofing URLs are still clean, Yahoo Local is still stale, Yelp is blocked from this environment, and MapQuest is still pending.
+- Checked recent Gmail for vendor/support replies across Thryv, YellowPages, Yahoo, MapQuest, Yelp, BBB, Facebook, Calendly, and Google Business/Profile terms; no new publication or owner-action reply was found.
+- Re-ran a targeted 1Password scan for the unresolved citation platforms. The only matching items were `Localmarketingmanager` and `Calendly Access Token`, which do not provide usable Rise owner access for Yelp, Facebook/Meta, Apple/iCloud, BBB, MapQuest, Yahoo, YellowPages, or Nextdoor.
