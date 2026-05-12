@@ -81,7 +81,7 @@ After the first completion audit, the open Human Review state was rechecked inst
 - The Google Business Profile social-profile editor was used to remove the stale Facebook URL from the Google-controlled profile while keeping Instagram intact. Google first accepted the save as a pending edit, then a refreshed public Google card showed only Instagram under Profiles and no Facebook link. This confirms GBP is no longer promoting the stale Facebook citation, but it does not normalize the Facebook page itself.
 - A later field-level 1Password scan across the `AV Design` vault still found no usable owner credentials for the remaining citation gates. `Localmarketingmanager` was reopened again and still returned no associated Google Business Profile locations; `Sync new locations` remained stuck on the sync screen. Evidence screenshot: `/tmp/rise-localmarketingmanager-sync-still-hung.png`.
 - Google Business Profile Support replied that third-party provider links come from providers and the provider should remove the business information from the data they send to Google. Gmail message ID: `19e1ceea60b63b32`. A same-thread reply asked Google to escalate the unauthorized Calendly provider removal; Gmail sent message ID `19e1cefc795b1112`.
-- A direct provider-feed removal request was sent to Calendly Support at `support@calendly.com`; Gmail sent message ID `19e1cf108149c6b6`. No Calendly confirmation or resolution was found in the immediate Gmail recheck.
+- A direct provider-feed removal request was sent to Calendly Support at `support@calendly.com`; Gmail sent message ID `19e1cf108149c6b6`. Calendly opened request `3672342`; the chatbot routed the issue toward impersonation/misuse review and asked whether this is trademark or unauthorized use. Replied that it is unauthorized use/impersonation, not trademark, and asked for a human agent; Gmail message IDs: Calendly reply `19e1cf1c31486f49`, AV reply `19e1cf3bd460a5dd`.
 
 ## Remaining Human Inputs
 
@@ -91,7 +91,7 @@ After the first completion audit, the open Human Review state was rechecked inst
 - Nextdoor Business: provide an owner-approved business account path plus verification documents.
 - BBB: wait for local BBB review or provide follow-up if BBB requests proof.
 - Yahoo/YellowPages/Thryv: wait for support publication or provide owner login if support stalls.
-- Google Business Profile Calendly provider: wait for Google support case `3-5405000041381`, the same-thread Google escalation reply, and the direct Calendly support request.
+- Google Business Profile Calendly provider: wait for Google support case `3-5405000041381`, the same-thread Google escalation reply, and Calendly request `3672342`.
 
 ## Completion Gate
 
