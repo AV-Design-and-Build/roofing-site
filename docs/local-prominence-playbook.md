@@ -51,7 +51,7 @@ Hold for later:
 
 ## Current Live Status
 
-- Google Business Profile: canonical name, phone, website, and Southern California service areas are published. The owner-managed booking URL is `https://riseroofingav.com/estimate`, but Google still shows a third-party `calendly.com` provider link; Google Business Profile Support case `3-5405000041381` was submitted to remove it.
+- Google Business Profile: canonical name, phone, website, and Southern California service areas are published. The owner-managed booking URL is `https://riseroofingav.com/estimate`, but Google still shows a third-party `calendly.com` provider link. Google Business Profile Support case `3-5405000041381` was submitted to remove it, and a later Google support email/contact form follow-up was submitted after an authenticated public-card recheck still showed `calendly.com/riseroofing9663`. Evidence screenshots: `/tmp/rise-google-public-card-calendly-still-visible.png` and `/tmp/rise-google-calendly-provider-support-email-sent.png`.
 - Bing Places: canonical name, phone, website, hidden address, and Southern California service areas are synced from Google. `Nassau County, NY` no longer appears in Bing Basic Details after the post-publication re-sync.
 - Yelp: moderator-reviewed `Suggest an edit` correction submitted for phone `(818) 714-7330` and website `https://riseroofingav.com/`; Yelp still shows `(323) 336-4612` until moderators verify/publish the change.
 - Facebook: requires owner login or page access before the old `(323) 336-4612` data, `RiseRoofing.` name formatting, and Google-share URL can be changed. A correction request email was sent from `sales@avdesignandbuilds.com` to the page's public contact email `riseroofing9663@gmail.com` (Gmail sent message ID `19e1c4d13b612bec`). A same-thread follow-up asking for owner action or the correct owner/access path was sent as Gmail message ID `19e1cba03063d5c2`.
@@ -119,3 +119,11 @@ Hold for later:
 
 - Exact stale-phone web searches found MapQuest and Yahoo Local as the actionable stale citation sources already in queue.
 - No additional clearly matching public stale-phone directory requiring a new correction path was found in that search pass.
+
+## GBP Support Follow-up - 2026-05-12T15:33Z
+
+- The Google support recent-case card for `3-5405000041381` still showed `In progress`, but the card did not open into a reply/details view from the help-center page.
+- Submitted a new Google support email/contact form follow-up through the Rise Roofing `Wrong reservation link` path with the issue text: `Case 3-5405000041381: remove stale Calendly booking link from Rise Roofing profile.`
+- The support form was completed as a service-area business with hidden public address, using the `Opt out of working with a specific partner` option and reason `The provider(s) is not our preferred provider at this time`.
+- Google confirmed `Your email has been sent`; immediate Gmail searches did not yet show a new Google confirmation email.
+- Authenticated Google Search for `Rise Roofing Glendale CA` still showed the public `calendly.com/riseroofing9663` provider link alongside the canonical website and phone, so the GBP Calendly-provider gate remains pending support action.

@@ -46,7 +46,7 @@ Command:
 npm run check:citations
 ```
 
-Latest observed result from `2026-05-12T14:57:18.541Z`:
+Latest observed result from `2026-05-12T15:37:17.822Z`:
 
 - `rise-home`: `OK`
 - `rise-estimate`: `OK`
@@ -59,7 +59,7 @@ Latest observed result from `2026-05-12T14:57:18.541Z`:
 - `apple-business`: `BLOCKED`, Apple Business Connect remains legal-organization/address gated
 - `bing-maps`: `OK`, a public Rise Roofing result is visible and the stale phone marker is absent
 
-The generated JSON report is written under ignored `tmp/citation-rechecks/`. The latest report is `2026-05-12T14-57-18.541Z.json`.
+The generated JSON report is written under ignored `tmp/citation-rechecks/`. The latest report is `2026-05-12T15-37-17.822Z.json`.
 
 ## Continuation Recheck
 
@@ -76,6 +76,8 @@ After the first completion audit, the open Human Review state was rechecked inst
 - A same-thread follow-up was sent to the Facebook/Calendly public contact email asking for owner action or the correct owner/access path. Gmail sent message ID: `19e1cba03063d5c2`.
 - Gmail was searched for Google Business Profile Support case `3-5405000041381` and related Calendly/provider terms; no Google support-resolution thread was found. A live browser attempt to recheck the public Google profile redirected to Google's automated-traffic block, so that card could not be reverified from this environment.
 - Exact stale-phone web searches found MapQuest and Yahoo Local as the actionable public stale citation sources already in queue; no additional clearly matching public stale-phone directory requiring a new correction path was found in that search pass.
+- The Google Business Profile support path was re-opened. The recent-case card still showed case `3-5405000041381` as `In progress`, but it did not open into a reply/details view. A new Google support email/contact form follow-up was submitted through the Rise Roofing `Wrong reservation link` path, and the form returned `Your email has been sent`.
+- An authenticated Google Search for `Rise Roofing Glendale CA` showed the public profile card with canonical phone/site still present, but the `calendly.com/riseroofing9663` provider link was still visible. Immediate Gmail searches did not show a new Google support confirmation email yet.
 
 ## Remaining Human Inputs
 
@@ -85,7 +87,7 @@ After the first completion audit, the open Human Review state was rechecked inst
 - Nextdoor Business: provide an owner-approved business account path plus verification documents.
 - BBB: wait for local BBB review or provide follow-up if BBB requests proof.
 - Yahoo/YellowPages/Thryv: wait for support publication or provide owner login if support stalls.
-- Google Business Profile Calendly provider: wait for Google support case `3-5405000041381`.
+- Google Business Profile Calendly provider: wait for Google support case `3-5405000041381` and the later support email/contact-form follow-up.
 
 ## Completion Gate
 

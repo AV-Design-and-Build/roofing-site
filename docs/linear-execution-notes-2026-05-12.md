@@ -36,7 +36,7 @@
 
 - Google Business Profile now exposes the canonical public NAP on Google Search: `Rise Roofing`, `(818) 714-7330`, and `https://riseroofingav.com/`.
 - Google Business Profile service-area edit published. The managed profile row now shows `Glendale, CA, USA`, `Pasadena, CA, USA`, and 10 other service areas, with no `Nassau County, NY`.
-- Google Business Profile's owner-managed booking URL is set to `https://riseroofingav.com/estimate`, but the public profile still shows a third-party `calendly.com` contact/provider link. Google Business Profile Support case `3-5405000041381` was submitted to remove the Calendly provider link.
+- Google Business Profile's owner-managed booking URL is set to `https://riseroofingav.com/estimate`, but the public profile still shows a third-party `calendly.com` contact/provider link. Google Business Profile Support case `3-5405000041381` was submitted to remove the Calendly provider link. A later authenticated Google Search recheck for `Rise Roofing Glendale CA` still showed the public `calendly.com/riseroofing9663` provider link, so a Google support email/contact form follow-up was also submitted through the `Wrong reservation link` / `Opt out of working with a specific partner` path. Evidence screenshots: `/tmp/rise-google-public-card-calendly-still-visible.png` and `/tmp/rise-google-calendly-provider-support-email-sent.png`.
 - The saved `Calendly Access Token` in 1Password belongs to the `proairchimney` / Air Duct & Chimney Services Calendly account, not `calendly.com/riseroofing9663`, so the old Rise Roofing Calendly link cannot be removed from the provider side with current credentials.
 - Bing Places was accessible through the saved Google login. The `RiseRoofing.` listing was synced from Google and now shows `Rise Roofing`, `(818) 714-7330`, and `https://riseroofingav.com/` in the Bing listing table and basic details.
 - Bing Places was re-synced after the GBP service-area edit published. Basic Details now shows the Southern California service-area tags only, with no `Nassau County, NY`, and the address is still hidden in search results.
@@ -99,3 +99,12 @@
 
 - Web searches for exact stale-phone variants (`"Rise Roofing" "323-336-4612"`, `"Rise Roofing" "(323) 336-4612"`, `"RiseRoofing" "323" "336" "4612"`, and exclusion variants without MapQuest/Yahoo) surfaced the same actionable stale citation sources already in queue: MapQuest and Yahoo Local.
 - No additional clearly matching public stale-phone directory requiring a new correction path was found in that search pass.
+
+## GBP Support Follow-up - 2026-05-12T15:33Z
+
+- The Google Business Profile Help recent-case card for case `3-5405000041381` still showed `In progress` and was not openable into a reply/details view from the help-center card.
+- The `Contact us` flow was opened directly for Rise Roofing, with the issue text `Case 3-5405000041381: remove stale Calendly booking link from Rise Roofing profile.`
+- Google showed the matching `Wrong reservation link` path and an email support option. The support form was submitted with the truthful service-area/hidden-address note instead of inventing a public storefront address, and the page confirmed `Your email has been sent`.
+- The form path used `Opt out of working with a specific partner` and the reason `The provider(s) is not our preferred provider at this time`.
+- Immediate Gmail searches for Google support/Rise Roofing/Calendly terms did not find a new Google support confirmation email yet.
+- An authenticated Google Search for `Rise Roofing Glendale CA` showed the public profile card with canonical `https://riseroofingav.com/`, `+1 818-714-7330`, `7 reviews`, and the stale `calendly.com/riseroofing9663` provider link still visible.
