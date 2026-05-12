@@ -61,3 +61,12 @@
 - Yahoo's fallback feedback channel requires Yahoo sign-in, and no Yahoo owner credential was available in the checked vault.
 - BBB's local browser path was stopped by Cloudflare human verification, but Firecrawl reached the official submit flow and submitted Rise Roofing for local BBB review.
 - Apple Business signup requires legal organization details and a mailing address before proceeding. Firecrawl confirmed the form fields and Apple's virtual-business positioning, and the live browser agency/third-party option check still kept the same legal organization/address gate in place. No owner-approved Rise Roofing legal address, Apple ID, or agency organization details are available in the checked access, so no Apple Business organization/listing was created with guessed information. Evidence screenshot: `/tmp/rise-apple-agency-legal-address-gate.png`.
+
+## Continuation Audit - 2026-05-12T14:41:04Z
+
+- Linear board was rechecked. All issues remain `Done` except `AVD-121` and parent `AVD-97`, both still in `Human Review`.
+- `npm run check:citations` was rerun. Controlled Rise Roofing URLs are still clean; Yahoo Local is still stale; Yelp is blocked from this environment; MapQuest is still pending support publication.
+- Gmail was rechecked for recent Rise/citation/vendor replies. No new support-resolution, owner-action, or publication email was found after the existing MapQuest `#3151908` confirmation and Thryv routing reply.
+- `Localmarketingmanager` was reopened from the saved 1Password item and `Sync new locations` was retried. The app still reported no associated Google Business Profile locations and stayed on the sync screen instead of returning a usable Rise Roofing location.
+- The public Facebook `RiseRoofing.` page was reopened. Without Facebook/Page access it exposed login-only controls and no anonymous correction path.
+- The local Linear PR helper was tried for branch `codex/rise-roofing-linear-batch`, but it failed because GitHub CLI authentication or `GH_TOKEN` is missing.

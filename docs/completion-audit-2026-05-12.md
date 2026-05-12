@@ -46,7 +46,7 @@ Command:
 npm run check:citations
 ```
 
-Latest observed result from `2026-05-12T14:34:26.718Z`:
+Latest observed result from `2026-05-12T14:41:04.056Z`:
 
 - `rise-home`: `OK`
 - `rise-estimate`: `OK`
@@ -54,7 +54,7 @@ Latest observed result from `2026-05-12T14:34:26.718Z`:
 - `yelp`: `BLOCKED`, status `403` from this environment
 - `mapquest`: `PENDING`, status `202` and no canonical markers visible yet
 
-The generated JSON report is written under ignored `tmp/citation-rechecks/`. The latest report, `2026-05-12T14-34-26.718Z.json`, was attached to `AVD-121`.
+The generated JSON report is written under ignored `tmp/citation-rechecks/`. The latest report is `2026-05-12T14-41-04.056Z.json`.
 
 ## Continuation Recheck
 
@@ -64,6 +64,9 @@ After the first completion audit, the open Human Review state was rechecked inst
 - Gmail was rechecked for recent Rise/citation/vendor replies covering Thryv, YellowPages, Yahoo, MapQuest, Yelp, BBB, Facebook, Calendly, and Google Business/Profile terms.
 - No new vendor publication, owner reply, or support-resolution email was found after the existing MapQuest `#3151908` confirmation and Thryv routing reply.
 - A targeted 1Password rescan for the remaining platforms found only `Localmarketingmanager` and `Calendly Access Token` as relevant matches, both already documented as not providing Rise owner access for the remaining citation gates.
+- `Localmarketingmanager` was opened again in a live browser from the saved 1Password item. It still showed no associated Google Business Profile locations, and the `Sync new locations` path remained stuck on the sync screen instead of returning a usable Rise Roofing location.
+- Facebook's public `RiseRoofing.` page was opened in a live browser. Without Facebook/Page access it showed login-only controls and no anonymous profile-correction or `suggest edit` path.
+- The local Linear PR helper was tried with branch `codex/rise-roofing-linear-batch`, but GitHub CLI authentication is still missing. The available GitHub 1Password item does not provide a usable GitHub username/password/token.
 
 ## Remaining Human Inputs
 

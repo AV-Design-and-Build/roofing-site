@@ -92,3 +92,9 @@ Hold for later:
 - Re-ran `npm run check:citations`; controlled Rise Roofing URLs are still clean, Yahoo Local is still stale, Yelp is blocked from this environment, and MapQuest is still pending.
 - Checked recent Gmail for vendor/support replies across Thryv, YellowPages, Yahoo, MapQuest, Yelp, BBB, Facebook, Calendly, and Google Business/Profile terms; no new publication or owner-action reply was found.
 - Re-ran a targeted 1Password scan for the unresolved citation platforms. The only matching items were `Localmarketingmanager` and `Calendly Access Token`, which do not provide usable Rise owner access for Yelp, Facebook/Meta, Apple/iCloud, BBB, MapQuest, Yahoo, YellowPages, or Nextdoor.
+
+## Continuation Audit - 2026-05-12T14:41:04Z
+
+- Re-ran `npm run check:citations`; controlled Rise Roofing URLs are still clean, Yahoo Local is still stale, Yelp is blocked from this environment, and MapQuest is still pending.
+- Re-opened `Localmarketingmanager` from the saved 1Password item. It still showed no associated Google Business Profile locations, and `Sync new locations` stayed on the sync screen without returning a usable Rise Roofing location.
+- Re-opened the public Facebook `RiseRoofing.` page. Without Facebook/Page access it exposed login-only controls and no anonymous correction path.
