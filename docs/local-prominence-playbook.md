@@ -61,6 +61,17 @@ Hold for later:
 - Yahoo Local: the stale listing at `https://local.yahoo.com/info-240067109-rise-roofing-los-angeles/` still shows `(323) 336-4612`. Its `Verify your listing` path routes to YellowPages and returned a Cloudflare `Sorry, you have been blocked` page from this environment; evidence screenshot saved at `/tmp/rise-yellowpages-cloudflare-block.png`. Yahoo's fallback UserVoice feedback form has a `False or incorrect content` category but requires Yahoo sign-in. YellowPages' general contact form includes reCAPTCHA and did not confirm a ticket without a valid CAPTCHA token. A correction request was sent to `support@thryv.com` with Gmail sent message ID `19e1c590b26695a1`, Thryv's public Contact Us form returned a confirmed thank-you message for the same request, and Thryv Support emailed back that the request was received and is being reviewed; evidence screenshot saved at `/tmp/rise-thryv-contact-submitted.png`, Thryv confirmation Gmail message ID `19e1c6217e7acd2c`. A Thryv Success Specialist then replied that the request was shared with the proper team; Gmail message ID `19e1c6e21c9603cf`.
 - Nextdoor Business: public searches found no existing Rise Roofing business page or old-phone match. Nextdoor's create-business path starts with creating/logging into a Nextdoor business account, and its support contact path is login-gated. Nextdoor's verification docs say business verification may require call/text or current business documents, and mobile/home-service businesses should use an address that matches documentation while optionally hiding it. Do not create a Nextdoor Business page until the owner supplies/approves the account path, verification documents, and business/mailing address to use.
 
+## Owner Unblock Checklist For AVD-121
+
+- Yelp: wait for the moderator-reviewed correction to publish, or provide Yelp owner/claim access for `Rise Roofing` so phone and website can be edited directly.
+- Facebook/Calendly: provide Page access for `RiseRoofing.` or have the current page owner update the phone, website, name formatting, and booking link. Facebook's own help says only people with Page access can update Page information: `https://www.facebook.com/help/160672070698623/`.
+- Apple Business Connect: provide the owner-approved legal organization name, business email, mailing address, Apple account or agency account path, and confirmation about whether the address may be used for verification only or may appear publicly.
+- Nextdoor Business: provide an owner-approved Nextdoor business account path plus verification documents. Nextdoor's public business-page guidance says business pages must be created or claimed by an owner, employee, or authorized representative, and its verification guidance may require current business documents: `https://business.nextdoor.com/en-us/getting-started/business-page?hsLang=en`.
+- BBB: wait for local BBB review, or provide any BBB support reply/request ID if they ask for more proof.
+- Yahoo/YellowPages/Thryv: wait for Thryv/Yahoo/YP support to publish the correction, or provide a Yahoo/YellowPages/Thryv owner login if the support route stalls.
+- Google Business Profile Calendly provider: wait for Google support case `3-5405000041381`, or provide access to the real Rise Roofing Calendly account behind `calendly.com/riseroofing9663`.
+- Public-address rule: do not publish a storefront address unless the owner explicitly approves the exact address and confirms that it is appropriate for public citation use.
+
 ## Access Audit
 
 - Available vault checked: `AV Design`.
