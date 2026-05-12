@@ -48,6 +48,57 @@ const checks = [
     staleMarkers: [stalePhone],
     allowBlocked: true,
   },
+  {
+    id: "facebook",
+    kind: "external",
+    url: "https://www.facebook.com/people/RiseRoofing/61580972774699/",
+    mustContain: ["RiseRoofing."],
+    desiredMarkers: [canonicalPhone, canonicalDomain],
+    staleMarkers: [stalePhone, "+1 323-336-4612", "323-336-4612"],
+    allowBlocked: true,
+    note: "Public Facebook page is owner/page-access gated.",
+  },
+  {
+    id: "bbb-search",
+    kind: "external",
+    url: "https://www.bbb.org/search?find_country=USA&find_text=Rise%20Roofing&find_loc=Los%20Angeles%2C%20CA",
+    mustContain: ["Rise Roofing"],
+    desiredMarkers: [canonicalPhone, canonicalDomain],
+    staleMarkers: [stalePhone],
+    allowBlocked: true,
+    note: "BBB profile publication is pending local BBB review.",
+  },
+  {
+    id: "nextdoor-create",
+    kind: "external",
+    url: "https://nextdoor.com/create-business/",
+    mustContain: [],
+    desiredMarkers: ["Rise Roofing"],
+    staleMarkers: [stalePhone],
+    allowBlocked: true,
+    note: "Nextdoor creation is login and business-verification gated.",
+  },
+  {
+    id: "apple-business",
+    kind: "external",
+    url: "https://businessconnect.apple.com/",
+    mustContain: [],
+    desiredMarkers: ["Rise Roofing"],
+    staleMarkers: [stalePhone],
+    allowBlocked: true,
+    note: "Apple Business Connect is legal-organization and address gated.",
+  },
+  {
+    id: "bing-maps",
+    kind: "external",
+    url: "https://www.bing.com/maps?q=Rise%20Roofing%20Los%20Angeles%20CA",
+    mustContain: ["Rise Roofing"],
+    desiredMarkers: ["Rise Roofing"],
+    staleMarkers: [stalePhone],
+    allowBlocked: true,
+    detectBlockedText: false,
+    note: "Public Bing Maps fetch can confirm a Rise result and stale-phone absence only.",
+  },
 ];
 
 function hasAll(text, markers = []) {
@@ -92,7 +143,10 @@ for (const check of checks) {
     const blocked =
       response.status === 403 ||
       response.status === 429 ||
-      /cloudflare|access denied|enable javascript|blocked/i.test(response.text);
+      (check.detectBlockedText !== false &&
+        /cloudflare|access denied|enable javascript|blocked|login|log in|sign in/i.test(
+          response.text,
+        ));
     const missingRequired = !hasAll(response.text, check.mustContain);
     const stalePresent = hasAny(response.text, check.staleMarkers);
     const desiredPresent = hasAll(response.text, check.desiredMarkers);
@@ -111,6 +165,7 @@ for (const check of checks) {
       desiredPresent,
       stalePresent,
       controlledFailure,
+      note: check.note,
     });
   } catch (error) {
     results.push({
@@ -119,6 +174,7 @@ for (const check of checks) {
       url: check.url,
       error: error instanceof Error ? error.message : String(error),
       controlledFailure: check.kind === "controlled",
+      note: check.note,
     });
   }
 }

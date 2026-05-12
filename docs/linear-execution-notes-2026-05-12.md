@@ -77,3 +77,9 @@
 - Worktree was clean against origin before the final audit note update.
 - `npm run check:citations` still reported controlled URLs clean, Yahoo stale, Yelp blocked, and MapQuest pending.
 - Linear board still showed exactly two non-Done issues: `AVD-121` and parent `AVD-97`, both in `Human Review`.
+
+## Expanded Citation Verifier - 2026-05-12T14:57:18Z
+
+- Expanded `scripts/recheck-citations.mjs` so `npm run check:citations` now covers controlled Rise URLs, Yahoo Local, Yelp, MapQuest, Facebook, BBB search, Nextdoor create-business, Apple Business Connect, and Bing Maps.
+- Latest expanded report: `rise-home` OK, `rise-estimate` OK, `bing-maps` OK for visible Rise result and stale-phone absence, `yahoo-local` STALE, `yelp` BLOCKED, `mapquest` PENDING, `facebook` BLOCKED, `bbb-search` BLOCKED, `nextdoor-create` BLOCKED, and `apple-business` BLOCKED.
+- This improves audit coverage but does not close AVD-121 because the issue requires actual public citation consistency, not only a broader verifier.

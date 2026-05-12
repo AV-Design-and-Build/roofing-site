@@ -77,7 +77,8 @@ Hold for later:
 - Run `npm run check:citations` to recheck the controlled site and stale external citation URLs.
 - The command writes a dated JSON report under `tmp/citation-rechecks/`, which is ignored by git.
 - The controlled Rise Roofing URLs fail the command if canonical NAP disappears or stale phone data appears.
-- External URLs are reported as `STALE`, `BLOCKED`, `PENDING`, or `OK` without failing the command, because Yelp, Yahoo, MapQuest, and similar platforms can block automated requests or wait on human review.
+- External URLs are reported as `STALE`, `BLOCKED`, `PENDING`, or `OK` without failing the command, because Yelp, Yahoo, MapQuest, Facebook, BBB, Nextdoor, Apple Business Connect, and similar platforms can block automated requests, require login/verification, or wait on human review.
+- The current verifier covers controlled site URLs, Yahoo Local, Yelp, MapQuest, Facebook, BBB search, Nextdoor create-business, Apple Business Connect, and Bing Maps. It cannot replace owner-account verification for platforms that intentionally hide or block profile-editing details.
 
 ## Access Audit
 
@@ -103,3 +104,8 @@ Hold for later:
 
 - Re-ran `npm run check:citations` during the completion audit. Result remained unchanged: controlled Rise Roofing URLs are clean, Yahoo Local is stale, Yelp is blocked from this environment, and MapQuest is pending.
 - Rechecked the Linear board. All issues are `Done` except `AVD-121` and parent `AVD-97`, both still in `Human Review`.
+
+## Expanded Citation Recheck - 2026-05-12T14:57:18Z
+
+- Expanded `npm run check:citations` to include Facebook, BBB search, Nextdoor create-business, Apple Business Connect, and Bing Maps in addition to the existing controlled site, Yahoo, Yelp, and MapQuest checks.
+- Latest expanded result: controlled URLs OK, Bing Maps OK for visible Rise result and stale-phone absence, Yahoo stale, Yelp blocked, MapQuest pending, and Facebook/BBB/Nextdoor/Apple blocked or gated.

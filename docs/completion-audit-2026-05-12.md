@@ -33,7 +33,7 @@ The repo-controlled work is complete and production is live, but Linear still sh
 | Publish first SEO content/page set | `/blog`, `/reviews`, `/estimate`, service pages, city pages, project proof-ready pages | Done |
 | Preserve honest proof/review guardrails | Proof-ready project pages and review slots avoid fabricated reviews, addresses, or completed-project claims | Done |
 | Normalize controlled NAP | Site, Google Business Profile, and Bing Places use `Rise Roofing`, `(818) 714-7330`, `https://riseroofingav.com/` | Done |
-| Track remaining citation state | `docs/local-prominence-playbook.md`, `docs/linear-execution-notes-2026-05-12.md`, and `npm run check:citations` | Done |
+| Track remaining citation state | `docs/local-prominence-playbook.md`, `docs/linear-execution-notes-2026-05-12.md`, and expanded `npm run check:citations` coverage for controlled site URLs, Yahoo, Yelp, MapQuest, Facebook, BBB, Nextdoor, Apple Business Connect, and Bing Maps | Done |
 | Update Linear issues with evidence | Linear comments and attachments added to AVD-121 and AVD-97, including proof screenshots and citation recheck JSON | Done |
 | Make all Linear issues Done | Board still shows `AVD-121` and `AVD-97` in `Human Review` | Not done |
 | Publicly normalize all core citations | Yahoo still shows `(323) 336-4612`; Yelp blocks local checks and final Firecrawl recheck still showed stale phone; MapQuest is pending support publication; BBB is pending local review; Facebook/Calendly and Apple/Nextdoor require owner-controlled access or legal/address verification | Not done |
@@ -46,15 +46,20 @@ Command:
 npm run check:citations
 ```
 
-Latest observed result from `2026-05-12T14:50:28.829Z`:
+Latest observed result from `2026-05-12T14:57:18.541Z`:
 
 - `rise-home`: `OK`
 - `rise-estimate`: `OK`
 - `yahoo-local`: `STALE`, still shows `(323) 336-4612`
 - `yelp`: `BLOCKED`, status `403` from this environment
 - `mapquest`: `PENDING`, status `202` and no canonical markers visible yet
+- `facebook`: `BLOCKED`, public page is login/Page-access gated and canonical markers are not visible
+- `bbb-search`: `BLOCKED`, status `403`; BBB publication remains pending local BBB review
+- `nextdoor-create`: `BLOCKED`, account/login plus verification gated
+- `apple-business`: `BLOCKED`, Apple Business Connect remains legal-organization/address gated
+- `bing-maps`: `OK`, a public Rise Roofing result is visible and the stale phone marker is absent
 
-The generated JSON report is written under ignored `tmp/citation-rechecks/`. The latest report is `2026-05-12T14-50-28.829Z.json`.
+The generated JSON report is written under ignored `tmp/citation-rechecks/`. The latest report is `2026-05-12T14-57-18.541Z.json`.
 
 ## Continuation Recheck
 
