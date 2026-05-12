@@ -1,0 +1,75 @@
+# Completion Audit - 2026-05-12
+
+## Objective
+
+Complete all Linear issues for the Rise Roofing project in `/home/AV/code/roofing-site` end to end, including code changes, verification, deployment, and issue updates.
+
+## Success Criteria
+
+- Every issue in Linear project `Rise Roofing SEO & Lead Gen Engine` is in `Done`.
+- Repo-controlled website, analytics, content, routing, sitemap, robots, lead capture, and docs work is implemented.
+- Verification commands pass and production routes respond successfully.
+- Linear issues contain current evidence and comments.
+- External profile/citation work is actually published or verified on the relevant platforms, not only requested.
+
+## Current Audit Result
+
+Not complete.
+
+The repo-controlled work is complete and production is live, but Linear still shows two non-Done issues:
+
+- `AVD-121` - `Human Review`
+- `AVD-97` - `Human Review`
+
+`AVD-97` is the parent phase and remains open because its definition of done includes core citations being consistent. Child issue `AVD-121` is not publicly complete yet.
+
+## Prompt-To-Artifact Checklist
+
+| Requirement | Evidence | Status |
+| --- | --- | --- |
+| Implement technical SEO, lead capture, and canonical URL work | `src/app/robots.ts`, sitemap updates, `/estimate`, analytics components, `src/lib/site-config.ts`, commit `7d1835c` | Done |
+| Ship production site | Vercel deployment `dpl_56pBr21jUAKGRz6Ay9wiNEAbTKBM`; `https://riseroofingav.com` routes return `200` | Done |
+| Verify repo work | `npm run lint` passed; `npm run build` passed; route checks documented in `docs/linear-execution-notes-2026-05-12.md` | Done |
+| Publish first SEO content/page set | `/blog`, `/reviews`, `/estimate`, service pages, city pages, project proof-ready pages | Done |
+| Preserve honest proof/review guardrails | Proof-ready project pages and review slots avoid fabricated reviews, addresses, or completed-project claims | Done |
+| Normalize controlled NAP | Site, Google Business Profile, and Bing Places use `Rise Roofing`, `(818) 714-7330`, `https://riseroofingav.com/` | Done |
+| Track remaining citation state | `docs/local-prominence-playbook.md`, `docs/linear-execution-notes-2026-05-12.md`, and `npm run check:citations` | Done |
+| Update Linear issues with evidence | Linear comments and attachments added to AVD-121 and AVD-97, including proof screenshots and citation recheck JSON | Done |
+| Make all Linear issues Done | Board still shows `AVD-121` and `AVD-97` in `Human Review` | Not done |
+| Publicly normalize all core citations | Yahoo still shows `(323) 336-4612`; Yelp blocks local checks and final Firecrawl recheck still showed stale phone; MapQuest is pending support publication; BBB is pending local review; Facebook/Calendly and Apple/Nextdoor require owner-controlled access or legal/address verification | Not done |
+
+## Latest Citation Recheck
+
+Command:
+
+```bash
+npm run check:citations
+```
+
+Latest observed result:
+
+- `rise-home`: `OK`
+- `rise-estimate`: `OK`
+- `yahoo-local`: `STALE`, still shows `(323) 336-4612`
+- `yelp`: `BLOCKED`, status `403` from this environment
+- `mapquest`: `PENDING`, status `202` and no canonical markers visible yet
+
+The generated JSON report is written under ignored `tmp/citation-rechecks/` and was attached to `AVD-121`.
+
+## Remaining Human Inputs
+
+- Yelp: wait for moderator publication or provide owner/claim access.
+- Facebook/Calendly: provide Facebook Page access or have the current page owner update the page; provide access to the actual `calendly.com/riseroofing9663` account if the Calendly provider link must be removed at source.
+- Apple Business Connect: provide owner-approved legal organization name, business email, mailing address, Apple account or agency account path, and public-address approval.
+- Nextdoor Business: provide an owner-approved business account path plus verification documents.
+- BBB: wait for local BBB review or provide follow-up if BBB requests proof.
+- Yahoo/YellowPages/Thryv: wait for support publication or provide owner login if support stalls.
+- Google Business Profile Calendly provider: wait for Google support case `3-5405000041381`.
+
+## Completion Gate
+
+Do not mark the project goal complete until one of these is true:
+
+- `AVD-121` and `AVD-97` are in `Done` after public citation checks confirm consistency.
+- The user explicitly accepts the remaining citation/publication work as externally blocked or out of scope and authorizes moving the Linear issues to `Done`.
+
