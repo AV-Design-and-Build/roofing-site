@@ -46,7 +46,7 @@ Command:
 npm run check:citations
 ```
 
-Latest observed result from `2026-05-12T14:41:04.056Z`:
+Latest observed result from `2026-05-12T14:50:28.829Z`:
 
 - `rise-home`: `OK`
 - `rise-estimate`: `OK`
@@ -54,7 +54,7 @@ Latest observed result from `2026-05-12T14:41:04.056Z`:
 - `yelp`: `BLOCKED`, status `403` from this environment
 - `mapquest`: `PENDING`, status `202` and no canonical markers visible yet
 
-The generated JSON report is written under ignored `tmp/citation-rechecks/`. The latest report is `2026-05-12T14-41-04.056Z.json`.
+The generated JSON report is written under ignored `tmp/citation-rechecks/`. The latest report is `2026-05-12T14-50-28.829Z.json`.
 
 ## Continuation Recheck
 
