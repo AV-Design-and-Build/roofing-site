@@ -72,6 +72,7 @@ After the first completion audit, the open Human Review state was rechecked inst
 - `Localmarketingmanager` was opened again in a live browser from the saved 1Password item. It still showed no associated Google Business Profile locations, and the `Sync new locations` path remained stuck on the sync screen instead of returning a usable Rise Roofing location.
 - Facebook's public `RiseRoofing.` page was opened in a live browser. Without Facebook/Page access it showed login-only controls and no anonymous profile-correction or `suggest edit` path.
 - The local Linear PR helper was tried with branch `codex/rise-roofing-linear-batch`, but GitHub CLI authentication is still missing. The available GitHub 1Password item does not provide a usable GitHub username/password/token.
+- Follow-up emails were sent inside the existing MapQuest and Thryv support threads after the expanded citation report still showed MapQuest pending and Yahoo stale. Gmail sent message IDs: MapQuest `19e1cb579f2df0a4`; Thryv `19e1cb5bcdb41f23`.
 
 ## Remaining Human Inputs
 
