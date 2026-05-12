@@ -89,3 +89,8 @@
 - BBB's own directory path says to claim a free BBB Business Profile or submit a request to add one: `https://www.bbb.org/get-listed`. Rise Roofing has already been submitted and is pending local BBB review.
 - Apple's public sign-up docs confirm Apple Business Connect/Apple Business requires legal company and address details for both company registration and third-party/agency registration: `https://support.apple.com/en-asia/guide/apple-business-connect/abcbea588667/web` and `https://support.apple.com/en-om/guide/apple-business-connect/abcbec357512/web`.
 - Nextdoor's public business-page docs say a business page must be created or claimed by an owner, employee, or authorized representative, and official business documents may be required: `https://business.nextdoor.com/en-us/getting-started/business-page`.
+
+## GBP Support Case Recheck - 2026-05-12
+
+- Gmail was searched for Google Business Profile Support case `3-5405000041381`, `Business Profile Support`, `calendly.com/riseroofing9663`, and related Rise Roofing terms. No Google support-resolution email thread was found.
+- A live browser attempt to open Google Search for `Rise Roofing 818 714 7330` redirected to Google's `/sorry/` automated-traffic block, so the public Google profile/Calendly-provider card could not be rechecked from this environment in that pass.

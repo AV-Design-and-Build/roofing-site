@@ -74,6 +74,7 @@ After the first completion audit, the open Human Review state was rechecked inst
 - The local Linear PR helper was tried with branch `codex/rise-roofing-linear-batch`, but GitHub CLI authentication is still missing. The available GitHub 1Password item does not provide a usable GitHub username/password/token.
 - Follow-up emails were sent inside the existing MapQuest and Thryv support threads after the expanded citation report still showed MapQuest pending and Yahoo stale. Gmail sent message IDs: MapQuest `19e1cb579f2df0a4`; Thryv `19e1cb5bcdb41f23`.
 - A same-thread follow-up was sent to the Facebook/Calendly public contact email asking for owner action or the correct owner/access path. Gmail sent message ID: `19e1cba03063d5c2`.
+- Gmail was searched for Google Business Profile Support case `3-5405000041381` and related Calendly/provider terms; no Google support-resolution thread was found. A live browser attempt to recheck the public Google profile redirected to Google's automated-traffic block, so that card could not be reverified from this environment.
 
 ## Remaining Human Inputs
 

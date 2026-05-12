@@ -109,3 +109,8 @@ Hold for later:
 
 - Expanded `npm run check:citations` to include Facebook, BBB search, Nextdoor create-business, Apple Business Connect, and Bing Maps in addition to the existing controlled site, Yahoo, Yelp, and MapQuest checks.
 - Latest expanded result: controlled URLs OK, Bing Maps OK for visible Rise result and stale-phone absence, Yahoo stale, Yelp blocked, MapQuest pending, and Facebook/BBB/Nextdoor/Apple blocked or gated.
+
+## GBP Support Case Recheck - 2026-05-12
+
+- Gmail was searched for Google Business Profile Support case `3-5405000041381`, `Business Profile Support`, `calendly.com/riseroofing9663`, and related Rise Roofing terms. No Google support-resolution email thread was found.
+- A live browser attempt to recheck the public Google profile via Google Search was redirected to Google's automated-traffic block, so the public Calendly-provider card could not be reverified from this environment in that pass.
