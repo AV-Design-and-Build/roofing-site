@@ -83,3 +83,9 @@
 - Expanded `scripts/recheck-citations.mjs` so `npm run check:citations` now covers controlled Rise URLs, Yahoo Local, Yelp, MapQuest, Facebook, BBB search, Nextdoor create-business, Apple Business Connect, and Bing Maps.
 - Latest expanded report: `rise-home` OK, `rise-estimate` OK, `bing-maps` OK for visible Rise result and stale-phone absence, `yahoo-local` STALE, `yelp` BLOCKED, `mapquest` PENDING, `facebook` BLOCKED, `bbb-search` BLOCKED, `nextdoor-create` BLOCKED, and `apple-business` BLOCKED.
 - This improves audit coverage but does not close AVD-121 because the issue requires actual public citation consistency, not only a broader verifier.
+
+## Official Source Recheck - 2026-05-12
+
+- BBB's own directory path says to claim a free BBB Business Profile or submit a request to add one: `https://www.bbb.org/get-listed`. Rise Roofing has already been submitted and is pending local BBB review.
+- Apple's public sign-up docs confirm Apple Business Connect/Apple Business requires legal company and address details for both company registration and third-party/agency registration: `https://support.apple.com/en-asia/guide/apple-business-connect/abcbea588667/web` and `https://support.apple.com/en-om/guide/apple-business-connect/abcbec357512/web`.
+- Nextdoor's public business-page docs say a business page must be created or claimed by an owner, employee, or authorized representative, and official business documents may be required: `https://business.nextdoor.com/en-us/getting-started/business-page`.
