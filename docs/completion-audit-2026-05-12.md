@@ -59,7 +59,7 @@ Latest observed result from `2026-05-12T15:40:17.470Z`:
 - `apple-business`: `BLOCKED`, Apple Business Connect remains legal-organization/address gated
 - `bing-maps`: `OK`, a public Rise Roofing result is visible and the stale phone marker is absent
 
-The generated JSON report is written under ignored `tmp/citation-rechecks/`. The latest report is `2026-05-12T16-04-35.014Z.json`.
+The generated JSON report is written under ignored `tmp/citation-rechecks/`. The latest report is `2026-05-12T16-13-32.730Z.json`.
 
 ## Continuation Recheck
 
@@ -82,6 +82,7 @@ After the first completion audit, the open Human Review state was rechecked inst
 - A later field-level 1Password scan across the `AV Design` vault still found no usable owner credentials for the remaining citation gates. `Localmarketingmanager` was reopened again and still returned no associated Google Business Profile locations; `Sync new locations` remained stuck on the sync screen. Evidence screenshot: `/tmp/rise-localmarketingmanager-sync-still-hung.png`.
 - Google Business Profile Support replied that third-party provider links come from providers and the provider should remove the business information from the data they send to Google. Gmail message ID: `19e1ceea60b63b32`. A same-thread reply asked Google to escalate the unauthorized Calendly provider removal; Gmail sent message ID `19e1cefc795b1112`.
 - A direct provider-feed removal request was sent to Calendly Support at `support@calendly.com`; Gmail sent message ID `19e1cf108149c6b6`. Calendly opened request `3672342`; the chatbot routed the issue toward impersonation/misuse review and asked whether this is trademark or unauthorized use. Replied that it is unauthorized use/impersonation, not trademark, and asked for a human agent; Gmail message IDs: Calendly reply `19e1cf1c31486f49`, AV reply `19e1cf3bd460a5dd`.
+- A later Gmail recheck found no new inbound support resolution after the Calendly ticket-routing reply. The `2026-05-12T16-13-32.730Z` citation report remained unchanged: controlled site URLs and Bing are OK, Yahoo is stale, MapQuest is pending, and Yelp/Facebook/BBB/Nextdoor/Apple are blocked or gated.
 
 ## Remaining Human Inputs
 
