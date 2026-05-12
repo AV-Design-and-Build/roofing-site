@@ -72,6 +72,13 @@ Hold for later:
 - Google Business Profile Calendly provider: wait for Google support case `3-5405000041381`, or provide access to the real Rise Roofing Calendly account behind `calendly.com/riseroofing9663`.
 - Public-address rule: do not publish a storefront address unless the owner explicitly approves the exact address and confirms that it is appropriate for public citation use.
 
+## Citation Recheck Command
+
+- Run `npm run check:citations` to recheck the controlled site and stale external citation URLs.
+- The command writes a dated JSON report under `tmp/citation-rechecks/`, which is ignored by git.
+- The controlled Rise Roofing URLs fail the command if canonical NAP disappears or stale phone data appears.
+- External URLs are reported as `STALE`, `BLOCKED`, `PENDING`, or `OK` without failing the command, because Yelp, Yahoo, MapQuest, and similar platforms can block automated requests or wait on human review.
+
 ## Access Audit
 
 - Available vault checked: `AV Design`.
