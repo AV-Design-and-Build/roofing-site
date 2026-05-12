@@ -94,3 +94,8 @@
 
 - Gmail was searched for Google Business Profile Support case `3-5405000041381`, `Business Profile Support`, `calendly.com/riseroofing9663`, and related Rise Roofing terms. No Google support-resolution email thread was found.
 - A live browser attempt to open Google Search for `Rise Roofing 818 714 7330` redirected to Google's `/sorry/` automated-traffic block, so the public Google profile/Calendly-provider card could not be rechecked from this environment in that pass.
+
+## Stale-Phone Web Search - 2026-05-12
+
+- Web searches for exact stale-phone variants (`"Rise Roofing" "323-336-4612"`, `"Rise Roofing" "(323) 336-4612"`, `"RiseRoofing" "323" "336" "4612"`, and exclusion variants without MapQuest/Yahoo) surfaced the same actionable stale citation sources already in queue: MapQuest and Yahoo Local.
+- No additional clearly matching public stale-phone directory requiring a new correction path was found in that search pass.
