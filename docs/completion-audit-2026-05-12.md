@@ -46,7 +46,7 @@ Command:
 npm run check:citations
 ```
 
-Latest observed result from `2026-05-12T15:37:17.822Z`:
+Latest observed result from `2026-05-12T15:40:17.470Z`:
 
 - `rise-home`: `OK`
 - `rise-estimate`: `OK`
@@ -59,7 +59,7 @@ Latest observed result from `2026-05-12T15:37:17.822Z`:
 - `apple-business`: `BLOCKED`, Apple Business Connect remains legal-organization/address gated
 - `bing-maps`: `OK`, a public Rise Roofing result is visible and the stale phone marker is absent
 
-The generated JSON report is written under ignored `tmp/citation-rechecks/`. The latest report is `2026-05-12T15-37-17.822Z.json`.
+The generated JSON report is written under ignored `tmp/citation-rechecks/`. The latest report is `2026-05-12T15-40-17.470Z.json`.
 
 ## Continuation Recheck
 
@@ -78,11 +78,12 @@ After the first completion audit, the open Human Review state was rechecked inst
 - Exact stale-phone web searches found MapQuest and Yahoo Local as the actionable public stale citation sources already in queue; no additional clearly matching public stale-phone directory requiring a new correction path was found in that search pass.
 - The Google Business Profile support path was re-opened. The recent-case card still showed case `3-5405000041381` as `In progress`, but it did not open into a reply/details view. A new Google support email/contact form follow-up was submitted through the Rise Roofing `Wrong reservation link` path, and the form returned `Your email has been sent`.
 - An authenticated Google Search for `Rise Roofing Glendale CA` showed the public profile card with canonical phone/site still present, but the `calendly.com/riseroofing9663` provider link was still visible. Immediate Gmail searches did not show a new Google support confirmation email yet.
+- The Google Business Profile social-profile editor was used to remove the stale Facebook URL from the Google-controlled profile while keeping Instagram intact. Google accepted the save as a pending edit. This is useful cleanup, but it does not normalize the Facebook page itself.
 
 ## Remaining Human Inputs
 
 - Yelp: wait for moderator publication or provide owner/claim access.
-- Facebook/Calendly: provide Facebook Page access or have the current page owner update the page; provide access to the actual `calendly.com/riseroofing9663` account if the Calendly provider link must be removed at source.
+- Facebook/Calendly: provide Facebook Page access or have the current page owner update the page; provide access to the actual `calendly.com/riseroofing9663` account if the Calendly provider link must be removed at source. The Google-controlled Facebook social-profile link is only pending removal and does not replace Page-level cleanup.
 - Apple Business Connect: provide owner-approved legal organization name, business email, mailing address, Apple account or agency account path, and public-address approval.
 - Nextdoor Business: provide an owner-approved business account path plus verification documents.
 - BBB: wait for local BBB review or provide follow-up if BBB requests proof.
