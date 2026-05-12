@@ -59,7 +59,7 @@ Latest observed result from `2026-05-12T15:40:17.470Z`:
 - `apple-business`: `BLOCKED`, Apple Business Connect remains legal-organization/address gated
 - `bing-maps`: `OK`, a public Rise Roofing result is visible and the stale phone marker is absent
 
-The generated JSON report is written under ignored `tmp/citation-rechecks/`. The latest report is `2026-05-12T16-01-16.713Z.json`.
+The generated JSON report is written under ignored `tmp/citation-rechecks/`. The latest report is `2026-05-12T16-04-35.014Z.json`.
 
 ## Continuation Recheck
 
@@ -80,6 +80,8 @@ After the first completion audit, the open Human Review state was rechecked inst
 - An authenticated Google Search for `Rise Roofing Glendale CA` showed the public profile card with canonical phone/site still present, but the `calendly.com/riseroofing9663` provider link was still visible. Immediate Gmail searches did not show a new Google support confirmation email yet.
 - The Google Business Profile social-profile editor was used to remove the stale Facebook URL from the Google-controlled profile while keeping Instagram intact. Google first accepted the save as a pending edit, then a refreshed public Google card showed only Instagram under Profiles and no Facebook link. This confirms GBP is no longer promoting the stale Facebook citation, but it does not normalize the Facebook page itself.
 - A later field-level 1Password scan across the `AV Design` vault still found no usable owner credentials for the remaining citation gates. `Localmarketingmanager` was reopened again and still returned no associated Google Business Profile locations; `Sync new locations` remained stuck on the sync screen. Evidence screenshot: `/tmp/rise-localmarketingmanager-sync-still-hung.png`.
+- Google Business Profile Support replied that third-party provider links come from providers and the provider should remove the business information from the data they send to Google. Gmail message ID: `19e1ceea60b63b32`. A same-thread reply asked Google to escalate the unauthorized Calendly provider removal; Gmail sent message ID `19e1cefc795b1112`.
+- A direct provider-feed removal request was sent to Calendly Support at `support@calendly.com`; Gmail sent message ID `19e1cf108149c6b6`. No Calendly confirmation or resolution was found in the immediate Gmail recheck.
 
 ## Remaining Human Inputs
 
@@ -89,7 +91,7 @@ After the first completion audit, the open Human Review state was rechecked inst
 - Nextdoor Business: provide an owner-approved business account path plus verification documents.
 - BBB: wait for local BBB review or provide follow-up if BBB requests proof.
 - Yahoo/YellowPages/Thryv: wait for support publication or provide owner login if support stalls.
-- Google Business Profile Calendly provider: wait for Google support case `3-5405000041381` and the later support email/contact-form follow-up.
+- Google Business Profile Calendly provider: wait for Google support case `3-5405000041381`, the same-thread Google escalation reply, and the direct Calendly support request.
 
 ## Completion Gate
 
