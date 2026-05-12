@@ -63,21 +63,23 @@ export default function Home() {
               Roof repair, roof replacement, and roofing services across Los Angeles.
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200 sm:text-xl">
-              Rise Roofing serves residential and commercial properties across Los Angeles and nearby California cities with a trust-first local contractor presence, clean communication, and roofing pages built for real estimate intent.
+              Rise Roofing helps residential and commercial property owners understand the next step when a roof is leaking, aging, storm-damaged, or ready for replacement.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <a
                 href={siteConfig.phoneHref}
                 className="inline-flex items-center justify-center rounded-sm bg-[#b88a44] px-6 py-4 text-base font-bold uppercase tracking-[0.12em] text-white transition hover:bg-[#a9792f]"
+                data-track-event="phone_click"
+                data-track-label="home_hero_primary"
               >
                 Call for an estimate
               </a>
               <Link
-                href="/services"
+                href="/estimate"
                 className="inline-flex items-center justify-center rounded-sm border border-white/20 px-6 py-4 text-base font-semibold text-white transition hover:bg-white/10"
               >
-                View roofing services
+                Request estimate online
               </Link>
             </div>
 
@@ -106,7 +108,7 @@ export default function Home() {
               <p className="text-sm font-bold uppercase tracking-[0.24em] text-[#b88a44]">Estimate Request</p>
               <h2 className="mt-3 text-3xl font-extrabold text-[#10233c]">Start with a quick call.</h2>
               <p className="mt-4 leading-7 text-slate-600">
-                Whether the next step is a repair, a replacement, or a roof inspection, the goal is simple: give property owners a clear path from first call to written recommendation.
+                Whether the next step is repair, replacement, inspection, or storm follow-up, the goal is simple: get the concern understood and the next step scheduled.
               </p>
 
               <div className="mt-6 space-y-3 border-t border-stone-200 pt-6">
@@ -122,12 +124,16 @@ export default function Home() {
                 <a
                   href={siteConfig.phoneHref}
                   className="inline-flex items-center justify-center rounded-sm bg-[#10233c] px-5 py-3 text-sm font-bold uppercase tracking-[0.12em] text-white transition hover:bg-[#183357]"
+                  data-track-event="phone_click"
+                  data-track-label="home_estimate_card_phone"
                 >
                   {siteConfig.phoneDisplay}
                 </a>
                 <a
                   href={siteConfig.googleBusinessProfileUrl}
                   className="inline-flex items-center justify-center rounded-sm border border-stone-300 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-[#b88a44] hover:text-[#10233c]"
+                  data-track-event="gbp_click"
+                  data-track-label="home_estimate_card_google_profile"
                 >
                   View Google Business Profile
                 </a>
@@ -142,11 +148,11 @@ export default function Home() {
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.24em] text-[#b88a44]">Roofing Services</p>
             <h2 className="mt-3 font-[family-name:var(--font-heading)] text-5xl uppercase tracking-[0.08em] text-[#10233c] sm:text-6xl">
-              Built around the services people actually search for.
+              Start with the service that matches the roof problem.
             </h2>
           </div>
           <p className="max-w-2xl text-lg leading-8 text-slate-600">
-            Rise Roofing is structured around the services people actually search for when they need help now — repair, replacement, inspections, and urgent roofing response.
+            Repair, replacement, inspections, emergency roofing, and storm damage each need a different conversation. The service pages help callers describe the problem clearly.
           </p>
         </div>
 
@@ -186,7 +192,7 @@ export default function Home() {
               Rise Roofing is positioned for homeowners, property managers, and commercial clients who want clear scope, dependable scheduling, and a company that communicates like a real local contractor.
             </p>
             <p className="mt-5 text-lg leading-8 text-slate-600">
-              The site foundation supports Google Business Profile trust, service-specific search intent, and city-by-city SEO growth across the greater Los Angeles market.
+              The important paths stay simple: call for urgent help, request an estimate with details, or choose the service page that fits the roof concern.
             </p>
             <div className="mt-8">
               <Link
@@ -221,7 +227,7 @@ export default function Home() {
             </div>
 
             <div className="border border-stone-200 bg-[#f8f4ec] p-8">
-              <p className="text-sm font-bold uppercase tracking-[0.24em] text-[#b88a44]">Core page stack</p>
+              <p className="text-sm font-bold uppercase tracking-[0.24em] text-[#b88a44]">Core services</p>
               <div className="mt-5 flex flex-wrap gap-3">
                 {siteConfig.services.map((service) => (
                   <span key={service.slug} className="border border-stone-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700">
@@ -239,19 +245,23 @@ export default function Home() {
           <div className="border border-stone-200 bg-[#10233c] p-8 text-white">
             <p className="text-sm font-bold uppercase tracking-[0.24em] text-[#f2d19b]">Five-Star Reviews</p>
             <h2 className="mt-4 text-4xl font-extrabold">Google trust should be easy to find.</h2>
-            <p className="mt-4 leading-8 text-slate-200">
-              The public profile already shows a {siteConfig.reviewRating.toFixed(1)} rating with {siteConfig.reviewCount} public Google reviews, so the website should reinforce that trust instead of burying it.
+              <p className="mt-4 leading-8 text-slate-200">
+              The public profile currently shows a {siteConfig.reviewRating.toFixed(1)} rating with {siteConfig.reviewCount} public Google reviews. This site uses that verified rating/count without inventing individual review text.
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <a
                 href={siteConfig.googleBusinessProfileUrl}
                 className="inline-flex items-center justify-center rounded-sm bg-[#b88a44] px-5 py-3 text-sm font-bold uppercase tracking-[0.12em] text-white transition hover:bg-[#a9792f]"
+                data-track-event="gbp_click"
+                data-track-label="home_reviews_google_profile"
               >
                 Explore all reviews
               </a>
               <a
                 href={siteConfig.phoneHref}
                 className="inline-flex items-center justify-center rounded-sm border border-white/20 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+                data-track-event="phone_click"
+                data-track-label="home_reviews_phone"
               >
                 Call {siteConfig.phoneDisplay}
               </a>
@@ -278,10 +288,10 @@ export default function Home() {
             <div>
               <p className="text-sm font-bold uppercase tracking-[0.24em] text-[#b88a44]">Service Areas</p>
               <h2 className="mt-3 font-[family-name:var(--font-heading)] text-5xl uppercase tracking-[0.08em] text-[#10233c] sm:text-6xl">
-                Greater Los Angeles first. Expand smart.
+                Focused local guidance for the service area.
               </h2>
               <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">
-                Rise Roofing is set up to grow from Los Angeles into nearby high-value cities instead of spraying out thin pages in every direction on day one.
+                Rise Roofing keeps city pages useful by matching local roof concerns, nearby service coverage, and clear estimate paths.
               </p>
             </div>
             <div className="relative min-h-[260px] overflow-hidden border border-stone-200 bg-[#10233c]">
@@ -300,11 +310,27 @@ export default function Home() {
               <article key={group.region} className="border border-stone-200 bg-[#f8f4ec] p-6">
                 <h3 className="text-2xl font-extrabold text-[#10233c]">{group.region}</h3>
                 <div className="mt-5 flex flex-wrap gap-3">
-                  {group.cities.map((city) => (
-                    <span key={city} className="bg-white px-4 py-2 text-sm font-semibold text-slate-700 ring-1 ring-stone-200">
-                      {city}
-                    </span>
-                  ))}
+                  {group.cities.map((city) => {
+                    const cityPage = siteConfig.cityPages.find((item) => item.city === city);
+
+                    if (!cityPage) {
+                      return (
+                        <span key={city} className="bg-white px-4 py-2 text-sm font-semibold text-slate-700 ring-1 ring-stone-200">
+                          {city}
+                        </span>
+                      );
+                    }
+
+                    return (
+                      <Link
+                        key={city}
+                        href={`/service-areas/${cityPage.slug}`}
+                        className="bg-white px-4 py-2 text-sm font-semibold text-slate-700 ring-1 ring-stone-200 transition hover:text-[#10233c] hover:ring-[#b88a44]"
+                      >
+                        {city}
+                      </Link>
+                    );
+                  })}
                 </div>
               </article>
             ))}
@@ -316,7 +342,7 @@ export default function Home() {
         <div className="relative overflow-hidden border border-stone-200 bg-[#10233c] p-8 text-white lg:p-10">
           <Image
             src="/site/cta-finished-roof-project.jpg"
-            alt="Finished roofing project banner"
+            alt="Roofing project banner image"
             fill
             className="object-cover"
           />
@@ -326,10 +352,10 @@ export default function Home() {
             <div>
               <p className="text-sm font-bold uppercase tracking-[0.24em] text-[#f2d19b]">Get Started With Your Roofing Project</p>
               <h2 className="mt-3 font-[family-name:var(--font-heading)] text-5xl uppercase tracking-[0.08em] text-white sm:text-6xl">
-                Built to earn trust fast and turn search traffic into estimate calls.
+                Get the roof concern understood and the next step scheduled.
               </h2>
               <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-100">
-                Rise Roofing now has the core image foundation in place: a finished-project hero, service imagery, local-market visuals, and contractor-style trust cues that fit the brand direction.
+                Call for urgent help, request an estimate with details and photos, or browse the service pages to understand which roofing path fits the problem.
               </p>
             </div>
 
@@ -337,14 +363,16 @@ export default function Home() {
               <a
                 href={siteConfig.phoneHref}
                 className="inline-flex w-full items-center justify-center rounded-sm bg-white px-6 py-4 text-base font-bold uppercase tracking-[0.12em] text-[#10233c] transition hover:bg-slate-100 lg:w-auto"
+                data-track-event="phone_click"
+                data-track-label="home_bottom_cta_phone"
               >
                 Call {siteConfig.businessName}
               </a>
               <Link
-                href="/services"
+                href="/estimate"
                 className="inline-flex w-full items-center justify-center rounded-sm border border-white/20 px-6 py-4 text-base font-semibold text-white transition hover:bg-white/10 lg:w-auto"
               >
-                Review service pages
+                Request estimate online
               </Link>
             </div>
           </div>
