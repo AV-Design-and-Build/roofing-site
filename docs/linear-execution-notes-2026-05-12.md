@@ -117,3 +117,10 @@
 - Google accepted the save and initially showed the social-profile edit under `PENDING`.
 - A refreshed public Google card then showed only Instagram under Profiles and no Facebook link. This confirms GBP is no longer promoting the stale Facebook citation, but it does not update Facebook itself.
 - Fresh `npm run check:citations` before this cleanup still showed the same external state: site and Bing OK, Yahoo stale, MapQuest pending, and Yelp/Facebook/BBB/Nextdoor/Apple blocked or gated.
+
+## Continuation Audit - 2026-05-12T16:00Z
+
+- Gmail was rechecked again for Rise/citation/vendor replies. New inbound item: Thryv Support Routing replied in the Yahoo/YellowPages thread that their team will review the provided information and asked to allow up to 48 hours for a response. Gmail message ID: `19e1cdaeaa881d60`.
+- This is an acknowledged support/escalation state, not publication: Yahoo Local still needs to be rechecked after Thryv/Yahoo/YellowPages update the listing.
+- A field-level 1Password scan across the `AV Design` vault still found no usable Rise owner credentials for Yelp, Facebook/Meta, Apple/iCloud, BBB, MapQuest, Yahoo, YellowPages, Nextdoor, Bing/Microsoft Places, or the real `calendly.com/riseroofing9663` account. The only relevant matches remain `Localmarketingmanager`, `Calendly Access Token`, and generic Google OAuth/Clarity items that do not unlock the remaining citation gates.
+- `Localmarketingmanager` was reopened and `Sync new locations` was retried. It still shows no associated Google Business Profile locations and remains stuck on the sync screen; evidence screenshot: `/tmp/rise-localmarketingmanager-sync-still-hung.png`.

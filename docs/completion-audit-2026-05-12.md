@@ -59,7 +59,7 @@ Latest observed result from `2026-05-12T15:40:17.470Z`:
 - `apple-business`: `BLOCKED`, Apple Business Connect remains legal-organization/address gated
 - `bing-maps`: `OK`, a public Rise Roofing result is visible and the stale phone marker is absent
 
-The generated JSON report is written under ignored `tmp/citation-rechecks/`. The latest report is `2026-05-12T15-50-52.774Z.json`.
+The generated JSON report is written under ignored `tmp/citation-rechecks/`. The latest report is `2026-05-12T16-01-16.713Z.json`.
 
 ## Continuation Recheck
 
@@ -67,7 +67,7 @@ After the first completion audit, the open Human Review state was rechecked inst
 
 - Linear board still showed only `AVD-121` and `AVD-97` outside `Done`.
 - Gmail was rechecked for recent Rise/citation/vendor replies covering Thryv, YellowPages, Yahoo, MapQuest, Yelp, BBB, Facebook, Calendly, and Google Business/Profile terms.
-- No new vendor publication, owner reply, or support-resolution email was found after the existing MapQuest `#3151908` confirmation and Thryv routing reply.
+- A new Thryv Support Routing reply arrived in the Yahoo/YellowPages thread saying their team will review the provided information and to allow up to 48 hours for a response; Gmail message ID `19e1cdaeaa881d60`. This is an acknowledged escalation, not a published citation correction.
 - A targeted 1Password rescan for the remaining platforms found only `Localmarketingmanager` and `Calendly Access Token` as relevant matches, both already documented as not providing Rise owner access for the remaining citation gates.
 - `Localmarketingmanager` was opened again in a live browser from the saved 1Password item. It still showed no associated Google Business Profile locations, and the `Sync new locations` path remained stuck on the sync screen instead of returning a usable Rise Roofing location.
 - Facebook's public `RiseRoofing.` page was opened in a live browser. Without Facebook/Page access it showed login-only controls and no anonymous profile-correction or `suggest edit` path.
@@ -79,6 +79,7 @@ After the first completion audit, the open Human Review state was rechecked inst
 - The Google Business Profile support path was re-opened. The recent-case card still showed case `3-5405000041381` as `In progress`, but it did not open into a reply/details view. A new Google support email/contact form follow-up was submitted through the Rise Roofing `Wrong reservation link` path, and the form returned `Your email has been sent`.
 - An authenticated Google Search for `Rise Roofing Glendale CA` showed the public profile card with canonical phone/site still present, but the `calendly.com/riseroofing9663` provider link was still visible. Immediate Gmail searches did not show a new Google support confirmation email yet.
 - The Google Business Profile social-profile editor was used to remove the stale Facebook URL from the Google-controlled profile while keeping Instagram intact. Google first accepted the save as a pending edit, then a refreshed public Google card showed only Instagram under Profiles and no Facebook link. This confirms GBP is no longer promoting the stale Facebook citation, but it does not normalize the Facebook page itself.
+- A later field-level 1Password scan across the `AV Design` vault still found no usable owner credentials for the remaining citation gates. `Localmarketingmanager` was reopened again and still returned no associated Google Business Profile locations; `Sync new locations` remained stuck on the sync screen. Evidence screenshot: `/tmp/rise-localmarketingmanager-sync-still-hung.png`.
 
 ## Remaining Human Inputs
 
