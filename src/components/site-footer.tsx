@@ -54,12 +54,37 @@ export function SiteFooter() {
               </Link>
             </li>
             <li>
-              <a href={siteConfig.googleBusinessProfileUrl} className="transition hover:text-white">
+              <Link href="/estimate" className="transition hover:text-white">
+                Request Estimate
+              </Link>
+            </li>
+            <li>
+              <Link href="/reviews" className="transition hover:text-white">
+                Reviews
+              </Link>
+            </li>
+            <li>
+              <Link href="/blog" className="transition hover:text-white">
+                Blog
+              </Link>
+            </li>
+            <li>
+              <a
+                href={siteConfig.googleBusinessProfileUrl}
+                className="transition hover:text-white"
+                data-track-event="gbp_click"
+                data-track-label="footer_google_profile"
+              >
                 Google Business Profile
               </a>
             </li>
             <li>
-              <a href={siteConfig.phoneHref} className="transition hover:text-white">
+              <a
+                href={siteConfig.phoneHref}
+                className="transition hover:text-white"
+                data-track-event="phone_click"
+                data-track-label="footer_phone_link"
+              >
                 {siteConfig.phoneDisplay}
               </a>
             </li>
@@ -67,7 +92,10 @@ export function SiteFooter() {
 
           <div className="mt-6 rounded-sm border border-white/10 bg-white/5 p-4 text-sm text-slate-300">
             <p className="font-semibold text-white">Selected service areas</p>
-            <p className="mt-2 leading-6">Los Angeles, Pasadena, Glendale, Burbank, Santa Monica, Long Beach, Torrance, Anaheim, Irvine, and nearby cities.</p>
+            <p className="mt-2 leading-6">
+              Los Angeles, Pasadena, Glendale, Burbank, Santa Monica, San Fernando, Altadena, Sierra Madre, La Canada
+              Flintridge, and nearby cities.
+            </p>
           </div>
         </div>
       </div>
@@ -75,7 +103,7 @@ export function SiteFooter() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col gap-2 px-6 py-5 text-sm text-slate-400 lg:flex-row lg:items-center lg:justify-between lg:px-8">
           <p>© 2026 {siteConfig.businessName}. All rights reserved.</p>
-          <p>Built for local search, local trust, and direct estimate calls.</p>
+          <p>Built for local trust and direct estimate calls.</p>
         </div>
       </div>
     </footer>

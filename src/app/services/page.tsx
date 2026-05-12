@@ -32,9 +32,17 @@ export default function ServicesPage() {
           <a
             href={siteConfig.phoneHref}
             className="mt-6 inline-flex rounded-sm bg-[#10233c] px-5 py-3 text-sm font-bold uppercase tracking-[0.12em] text-white transition hover:bg-[#183357]"
+            data-track-event="phone_click"
+            data-track-label="services_page_quick_contact"
           >
             {siteConfig.phoneDisplay}
           </a>
+          <Link
+            href="/estimate"
+            className="ml-0 mt-3 inline-flex rounded-sm border border-stone-300 px-5 py-3 text-sm font-bold uppercase tracking-[0.12em] text-[#10233c] transition hover:border-[#b88a44] sm:ml-3"
+          >
+            Request estimate
+          </Link>
         </div>
       </section>
 

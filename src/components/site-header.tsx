@@ -6,6 +6,8 @@ const navItems = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Roofing Services" },
   { href: "/service-areas", label: "Service Areas" },
+  { href: "/reviews", label: "Reviews" },
+  { href: "/blog", label: "Blog" },
 ];
 
 export function SiteHeader() {
@@ -16,7 +18,12 @@ export function SiteHeader() {
           <p className="font-medium tracking-[0.02em]">
             Los Angeles roofing services for residential and commercial properties
           </p>
-          <a href={siteConfig.phoneHref} className="font-semibold text-[#f2d19b] transition hover:text-white">
+          <a
+            href={siteConfig.phoneHref}
+            className="font-semibold text-[#f2d19b] transition hover:text-white"
+            data-track-event="phone_click"
+            data-track-label="header_top_bar"
+          >
             {siteConfig.phoneDisplay}
           </a>
         </div>
@@ -50,17 +57,29 @@ export function SiteHeader() {
             <a
               href={siteConfig.googleBusinessProfileUrl}
               className="transition hover:text-[#10233c]"
+              data-track-event="gbp_click"
+              data-track-label="header_nav_google_profile"
             >
               Google Profile
             </a>
           </nav>
 
-          <a
-            href={siteConfig.phoneHref}
-            className="inline-flex shrink-0 items-center justify-center rounded-sm bg-[#b88a44] px-4 py-3 text-sm font-bold uppercase tracking-[0.12em] text-white transition hover:bg-[#a9792f]"
-          >
-            Call Now
-          </a>
+          <div className="flex shrink-0 items-center gap-2">
+            <Link
+              href="/estimate"
+              className="hidden items-center justify-center rounded-sm border border-stone-300 px-4 py-3 text-sm font-bold uppercase tracking-[0.12em] text-[#10233c] transition hover:border-[#b88a44] sm:inline-flex"
+            >
+              Estimate
+            </Link>
+            <a
+              href={siteConfig.phoneHref}
+              className="inline-flex items-center justify-center rounded-sm bg-[#b88a44] px-4 py-3 text-sm font-bold uppercase tracking-[0.12em] text-white transition hover:bg-[#a9792f]"
+              data-track-event="phone_click"
+              data-track-label="header_primary_cta"
+            >
+              Call Now
+            </a>
+          </div>
         </div>
       </div>
     </header>

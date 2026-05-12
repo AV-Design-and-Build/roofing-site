@@ -24,6 +24,11 @@
 .DS_Store
 *.pem
 /tmp
+.firecrawl/
+
+# local/generated skill exports
+.agents/skills/google-ads-*
+.agents/skills/shots/
 
 # debug
 npm-debug.log*
@@ -33,6 +38,7 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
 
 # vercel
 .vercel

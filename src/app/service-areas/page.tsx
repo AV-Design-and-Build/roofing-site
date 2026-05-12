@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Service Areas",
   description:
-    "Rise Roofing serves Los Angeles and selected nearby cities across greater LA and Orange County with a local SEO foundation designed to expand intelligently.",
+    "Rise Roofing serves Los Angeles and selected nearby Southern California cities with roof repair, replacement, inspections, storm damage, and emergency roofing support.",
+  alternates: {
+    canonical: "/service-areas",
+  },
 };
 
 export default function ServiceAreasPage() {
@@ -14,46 +18,68 @@ export default function ServiceAreasPage() {
         <div>
           <p className="text-sm font-bold uppercase tracking-[0.24em] text-[#b88a44]">Service Areas</p>
           <h1 className="mt-4 font-[family-name:var(--font-heading)] text-6xl uppercase tracking-[0.08em] text-[#10233c] sm:text-7xl">
-            Greater Los Angeles service-area foundation.
+            Roofing service-area pages with real local context.
           </h1>
           <p className="mt-6 text-lg leading-8 text-slate-600">
-            The right move here is not to flood the internet with every city inside a 100-mile radius. It is to focus on the cities most likely to drive real leads first, then expand service-and-city combinations methodically.
+            Rise Roofing is a service-area roofing company. These pages focus on the city, roof concerns, nearby service
+            coverage, and call-first estimate paths without pretending there is a physical office in every market.
           </p>
         </div>
 
         <div className="border border-stone-200 bg-[#10233c] p-6 text-white">
-          <p className="text-sm font-bold uppercase tracking-[0.24em] text-[#f2d19b]">Recommended starting markets</p>
+          <p className="text-sm font-bold uppercase tracking-[0.24em] text-[#f2d19b]">Current build</p>
           <p className="mt-3 leading-7 text-slate-200">
-            Los Angeles itself should anchor the build, followed by nearby high-value cities like Pasadena, Glendale, Burbank, Santa Monica, Long Beach, Torrance, Anaheim, Irvine, and Newport Beach.
+            The focused cities give homeowners more specific local guidance, while anchor markets remain available for
+            broader Los Angeles-area service searches.
           </p>
         </div>
       </section>
 
       <section className="mt-10 grid gap-6 lg:grid-cols-2">
-        {siteConfig.areaGroups.map((group) => (
-          <article key={group.region} className="border border-stone-200 bg-white p-8 shadow-sm">
-            <p className="text-sm font-bold uppercase tracking-[0.24em] text-[#b88a44]">{group.region}</p>
-            <div className="mt-5 flex flex-wrap gap-3">
-              {group.cities.map((city) => (
-                <span
-                  key={city}
-                  className="bg-[#f8f4ec] px-4 py-2 text-sm font-semibold text-slate-700 ring-1 ring-stone-200"
-                >
-                  {city}
-                </span>
-              ))}
-            </div>
-          </article>
-        ))}
+        <div className="border border-stone-200 bg-white p-8">
+          <p className="text-sm font-bold uppercase tracking-[0.24em] text-[#b88a44]">Focused city pages</p>
+          <h2 className="mt-3 text-3xl font-extrabold text-[#10233c]">Specific local pages first.</h2>
+          <div className="mt-6 grid gap-4">
+            {siteConfig.firstWaveCities.map((city) => (
+              <Link
+                key={city.slug}
+                href={`/service-areas/${city.slug}`}
+                className="border border-stone-200 bg-[#f8f4ec] p-5 transition hover:border-[#b88a44]"
+              >
+                <p className="text-xl font-extrabold text-[#10233c]">{city.city}</p>
+                <p className="mt-2 leading-7 text-slate-600">{city.metaDescription}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        <div className="border border-stone-200 bg-white p-8">
+          <p className="text-sm font-bold uppercase tracking-[0.24em] text-[#b88a44]">Anchor markets</p>
+          <h2 className="mt-3 text-3xl font-extrabold text-[#10233c]">Broader city pages still available.</h2>
+          <div className="mt-6 grid gap-4">
+            {siteConfig.anchorCityPages.map((city) => (
+              <Link
+                key={city.slug}
+                href={`/service-areas/${city.slug}`}
+                className="border border-stone-200 bg-[#f8f4ec] p-5 transition hover:border-[#b88a44]"
+              >
+                <p className="text-xl font-extrabold text-[#10233c]">{city.city}</p>
+                <p className="mt-2 leading-7 text-slate-600">{city.metaDescription}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
       </section>
 
       <section className="mt-12 grid gap-8 lg:grid-cols-[1fr_1fr]">
         <div className="border border-stone-200 bg-white p-8">
-          <p className="text-sm font-bold uppercase tracking-[0.24em] text-[#b88a44]">How to expand later</p>
+          <p className="text-sm font-bold uppercase tracking-[0.24em] text-[#b88a44]">How local pages expand</p>
           <ul className="mt-5 grid gap-3 text-slate-600">
-            <li className="border border-stone-200 bg-[#f8f4ec] p-4">Start with the homepage, service pages, and Google Business Profile alignment.</li>
-            <li className="border border-stone-200 bg-[#f8f4ec] p-4">Next pair the highest-value services with the highest-value nearby cities.</li>
-            <li className="border border-stone-200 bg-[#f8f4ec] p-4">Then publish city-specific proof, reviews, photos, and internal links instead of thin duplicate text.</li>
+            {siteConfig.publishingChecklist.map((item) => (
+              <li key={item} className="border border-stone-200 bg-[#f8f4ec] p-4">
+                {item}
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -61,14 +87,25 @@ export default function ServiceAreasPage() {
           <p className="text-sm font-bold uppercase tracking-[0.24em] text-[#f2d19b]">Need help now?</p>
           <p className="mt-4 text-3xl font-extrabold">Call Rise Roofing directly.</p>
           <p className="mt-4 leading-8 text-slate-200">
-            If the next step is an estimate, an inspection, or an urgent roofing conversation, direct contact should stay obvious on every page.
+            If the next step is an estimate, inspection, storm repair, or urgent roofing conversation, direct phone
+            contact should stay obvious on every city page.
           </p>
-          <a
-            href={siteConfig.phoneHref}
-            className="mt-6 inline-flex rounded-sm bg-white px-5 py-3 text-sm font-bold uppercase tracking-[0.12em] text-[#10233c] transition hover:bg-slate-100"
-          >
-            {siteConfig.phoneDisplay}
-          </a>
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+            <a
+              href={siteConfig.phoneHref}
+              className="inline-flex rounded-sm bg-white px-5 py-3 text-sm font-bold uppercase tracking-[0.12em] text-[#10233c] transition hover:bg-slate-100"
+              data-track-event="phone_click"
+              data-track-label="service_areas_phone"
+            >
+              {siteConfig.phoneDisplay}
+            </a>
+            <Link
+              href="/estimate"
+              className="inline-flex rounded-sm border border-white/20 px-5 py-3 text-sm font-bold uppercase tracking-[0.12em] text-white transition hover:bg-white/10"
+            >
+              Request estimate
+            </Link>
+          </div>
         </div>
       </section>
     </main>
