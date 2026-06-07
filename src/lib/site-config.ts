@@ -604,29 +604,35 @@ const cityPages: CityPage[] = [
     county: "Los Angeles County",
     region: "San Gabriel Valley",
     priority: "anchor-market",
-    heroTitle: "Roofing services in Pasadena",
+    heroTitle: "Roof repair in Pasadena",
+    metaTitle: "Roof Repair in Pasadena",
     metaDescription:
-      "Pasadena roof repair, replacement, inspections, emergency roofing, and storm damage support from Rise Roofing.",
+      "Roof repair in Pasadena for tile, slate, and aging shingle roofs. Rise Roofing covers Pasadena with inspections, storm follow-up, and replacement help.",
     intro:
-      "Pasadena homeowners often need help with older homes, visible tile or shingle wear, storm follow-up, and inspection questions before larger roof decisions.",
+      "Pasadena homeowners often need roof repair on older Craftsman, Spanish Colonial, and mid-century homes, where cracked or slipped tile, worn underlayment, and aging shingle roofs are common. Rise Roofing provides roofing in Pasadena with a clear, call-first path from the first concern to repair, inspection, or a larger replacement decision.",
     roofingConcerns: [
-      "Aging roof systems on older residential properties",
-      "Tile, shingle, flashing, and roof-edge concerns",
-      "Storm follow-up after wind or heavy rain",
-      "Inspection questions before repairs, replacement, or home transactions",
+      "Cracked, slipped, or broken clay tile and aging shingle or slate roofs on older homes",
+      "Worn underlayment and failing flashing around chimneys, valleys, and roof edges",
+      "Storm follow-up after San Gabriel foothill wind events and Santa Ana or canyon winds",
+      "Inspection questions before committing to repair, replacement, or a home sale",
     ],
-    serviceFocus: ["Roof inspections", "Roof repair", "Roof replacement", "Storm damage roofing"],
-    nearbyCities: ["Altadena", "Sierra Madre", "Glendale", "Los Angeles"],
+    serviceFocus: ["Roof repair", "Roof inspections", "Storm damage roofing", "Roof replacement"],
+    nearbyCities: ["Altadena", "Sierra Madre", "South Pasadena", "San Marino"],
     faqs: [
       {
-        question: "Can Pasadena homeowners start with an inspection?",
+        question: "Do you handle roof repair on Pasadena's older tile and slate roofs?",
         answer:
-          "Yes. An inspection is a practical first step when the owner is unsure whether the roof needs targeted repair or a broader replacement plan.",
+          "Yes. A lot of roof repair in Pasadena involves clay tile, slate, and aging shingle roofs on historic and older homes, including cracked or slipped tiles, worn underlayment, and tired flashing. A short call helps clarify the roof type and whether a targeted repair makes sense before a larger replacement conversation.",
       },
       {
-        question: "Should Pasadena roofing issues be handled by phone first?",
+        question: "Should I get an inspection before deciding on repair or replacement?",
         answer:
-          "A short call helps clarify urgency, roof type, location, and whether photos should be sent before the estimate conversation.",
+          "Often, yes. On older Pasadena homes an inspection is a practical first step when you are unsure whether the roof needs a focused repair or broader replacement, and it is useful before a home sale. Call to talk through the concern and we can point you toward the right next step.",
+      },
+      {
+        question: "Can you help after a foothill wind or storm event?",
+        answer:
+          "Yes. Pasadena sits near the San Gabriel foothills, so Santa Ana and canyon winds can lift or break tiles and expose underlayment. Start with a phone call describing the damage and any safe photos, and we can guide storm follow-up, repair, or inspection from there.",
       },
     ],
   },
@@ -712,29 +718,35 @@ const cityPages: CityPage[] = [
     county: "Los Angeles County",
     region: "Westside and coastal",
     priority: "anchor-market",
-    heroTitle: "Roofing services in Santa Monica",
+    heroTitle: "Santa Monica roofing built for coastal conditions",
+    metaTitle: "Roofing in Santa Monica",
     metaDescription:
-      "Santa Monica roof repair, inspections, storm damage roofing, and replacement planning from Rise Roofing.",
+      "Roofing in Santa Monica from Rise Roofing: coastal roof repair, inspections, storm damage help, and replacement planning for homes and small commercial. Call first.",
     intro:
-      "Coastal properties can face roof wear tied to weather exposure, moisture, flashing details, and the need for clear repair-versus-replacement guidance.",
+      "Santa Monica roofing has to stand up to salt air, marine-layer moisture, and wind-driven rain off the ocean, which can wear down flashing, fasteners, and metal roof details faster than inland homes. Rise Roofing serves Santa Monica with repair, inspection, and replacement guidance for both Spanish-style tile homes and flat or low-slope Westside roofs.",
     roofingConcerns: [
-      "Moisture and weather exposure near coastal neighborhoods",
-      "Leaks around roof details, penetrations, and transitions",
-      "Inspection questions for residential and commercial properties",
-      "Urgent storm or wind follow-up after visible roof damage",
+      "Salt air and marine-layer moisture corroding fasteners, flashing, and metal roof details",
+      "Wind-driven rain off the ocean finding leaks at roof edges and penetrations",
+      "Flat or low-slope roofs on modern Westside homes that pond or wear at seams",
+      "Older Spanish-style tile roofs needing repair-versus-replacement guidance",
     ],
     serviceFocus: ["Roof inspections", "Roof repair", "Storm damage roofing", "Commercial roofing"],
-    nearbyCities: ["Los Angeles", "Beverly Hills", "Culver City", "Torrance"],
+    nearbyCities: ["Venice", "Brentwood", "Pacific Palisades", "Marina del Rey"],
     faqs: [
       {
-        question: "Does coastal exposure change the inspection conversation?",
+        question: "Does coastal weather change what Santa Monica roofing needs?",
         answer:
-          "It can. Moisture, wind, and roof-detail wear are good reasons to describe the property location and visible symptoms during the call.",
+          "It can. Salt air, marine-layer humidity, and wind-driven rain near the coast tend to corrode flashing, fasteners, and metal details sooner, so it helps to describe the property location and any visible wear when you call.",
       },
       {
-        question: "Can the estimate form include photos?",
+        question: "Can Rise Roofing handle flat and low-slope roofs common on the Westside?",
         answer:
-          "Yes. The estimate flow is designed for optional photo upload so callers can share safe photos before a callback.",
+          "Yes. Many modern Santa Monica homes and small commercial buildings have flat or low-slope roofs, and a call lets us sort out whether a targeted repair, an inspection, or a replacement conversation makes the most sense.",
+      },
+      {
+        question: "Should an urgent Santa Monica roof leak start with a phone call?",
+        answer:
+          "Yes. For active leaks or storm follow-up, calling (818) 714-7330 first is faster than a form, and you can share safe photos and the roof type so we can guide the next step.",
       },
     ],
   },
