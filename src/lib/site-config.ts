@@ -35,6 +35,7 @@ export type CityPage = {
   region: string;
   priority: "first-wave" | "anchor-market";
   heroTitle: string;
+  metaTitle?: string;
   metaDescription: string;
   intro: string;
   roofingConcerns: string[];
@@ -635,29 +636,41 @@ const cityPages: CityPage[] = [
     county: "Los Angeles County",
     region: "Los Angeles foothills",
     priority: "anchor-market",
-    heroTitle: "Roofing services in Glendale",
+    heroTitle: "Roofing and Roof Repair in Glendale, CA",
+    metaTitle: "Roofing Glendale CA | Glendale Roof Repair",
     metaDescription:
-      "Glendale roof repair, storm damage support, roof replacement planning, and inspections from Rise Roofing.",
+      "Roofing in Glendale for Verdugo foothill homes: roof repair, leak help, wind and storm damage, and inspections. Call Rise Roofing for a free estimate.",
     intro:
-      "Glendale roofing needs can involve hillside drainage, older roofing materials, storm exposure, and urgent leak conversations that need a clear next step.",
+      "Glendale roofing has to stand up to a lot: high-UV summers that bake shingles and tile underlayment, Santa Ana winds that lift and loosen them, and concentrated winter storms that find every weak flashing and valley. On Verdugo Mountains and San Rafael hillside lots, slope drainage and wildfire-rated roof details matter even more. Whether you need Glendale roof repair, a leak checked, or replacement planning, call Rise Roofing for a free estimate conversation.",
     roofingConcerns: [
-      "Leaks tied to drainage, flashing, or roof penetrations",
-      "Wind and storm exposure around hillside properties",
-      "Repair needs on older shingles, tile, or low-slope sections",
-      "Replacement planning when recurring leaks keep returning",
+      "Foothill and hillside slope drainage that channels heavy runoff",
+      "High-UV summer heat aging shingles, tile underlayment, and sealants",
+      "Santa Ana winds lifting and loosening shingles and clay tile",
+      "Recurring winter-storm leaks at flashing, valleys, and roof penetrations",
+      "Class A fire-rated, ember-resistant roofing for Verdugo and San Rafael hillside homes",
     ],
-    serviceFocus: ["Roof repair", "Storm damage roofing", "Roof inspections", "Roof replacement"],
-    nearbyCities: ["Burbank", "Pasadena", "La Canada Flintridge", "Los Angeles"],
+    serviceFocus: ["Roof Repair", "Roof Replacement", "Roof Inspections", "Storm Damage Roofing"],
+    nearbyCities: ["Burbank", "Pasadena", "La Canada Flintridge", "Eagle Rock"],
     faqs: [
       {
-        question: "What Glendale roof problems should be treated as urgent?",
+        question: "Do you handle roof repair for hillside homes in the Glendale foothills?",
         answer:
-          "Active water entry, exposed roof sections, fast-spreading stains, and storm damage should start with a phone call instead of waiting on a form.",
+          "Yes. Many Glendale roofs sit on sloped lots against the Verdugo Mountains and San Rafael Hills, where drainage, runoff, and wind exposure all factor into a repair. Call with your address, roof type, and what you are seeing, and we can talk through the right next step and set up a free estimate.",
       },
       {
-        question: "Can Rise Roofing help compare repair and replacement?",
+        question: "How do I know if my Glendale roof needs repair or replacement?",
         answer:
-          "Yes. The service pages are built to help owners understand whether a targeted repair or larger replacement conversation makes sense.",
+          "It usually comes down to age, how widespread the damage is, and how often leaks keep returning. A roof with one isolated problem and good remaining life is often a repair candidate, while widely worn shingles, failing tile underlayment, or leaks in several spots lean toward replacement. The fastest way to sort it out is a quick call and, if helpful, an inspection before any larger decision.",
+      },
+      {
+        question: "Is fire-rated roofing worth considering for a Glendale hillside home?",
+        answer:
+          "For homes near the foothills and wildland edges, Class A fire-rated roofing and ember-resistant roof details are genuinely relevant and can be part of a repair or replacement plan. Mention that your home is on or near the hillside when you call, and we will factor fire-resistant options into the conversation and any inspection.",
+      },
+      {
+        question: "Does Rise Roofing have an office in Glendale?",
+        answer:
+          "Rise Roofing is a service-area roofing company covering Glendale and the surrounding Los Angeles County foothills, so we do not operate a storefront in every city we serve. You still get the same call-first support: describe the roof concern, your neighborhood, and the urgency, and we will set up a free estimate and a clear next step. For active leaks or storm damage, calling first is faster than the estimate request page.",
       },
     ],
   },

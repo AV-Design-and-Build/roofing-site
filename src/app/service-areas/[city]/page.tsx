@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${city.city} Roofing Services`,
+    title: city.metaTitle ?? `${city.city} Roofing Services`,
     description: city.metaDescription,
     alternates: {
       canonical: `/service-areas/${city.slug}`,
