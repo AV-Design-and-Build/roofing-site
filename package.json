@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "check:citations": "node scripts/recheck-citations.mjs"
+    "check:citations": "node scripts/recheck-citations.mjs",
+    "test:citations": "node scripts/test-recheck-citations.mjs"
   },
   "dependencies": {
     "next": "16.1.6",
