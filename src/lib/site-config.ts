@@ -418,43 +418,61 @@ const services: Service[] = [
     shortLabel: "Roof inspections",
     thumbnailImage: "/site/service-roof-inspection.jpg",
     heroImage: "/site/hero-roof-inspections.jpg",
+    metaTitle: "Roof Inspection in Los Angeles",
+    metaDescription:
+      "Roof inspection in Los Angeles from Rise Roofing — post-storm, pre-sale, insurance, and maintenance roof checks with clear findings and next steps. Call (818) 714-7330 for a free estimate.",
     excerpt:
-      "Inspection support for visible wear, storm follow-up, resale prep, leak concerns, and repair-versus-replacement decisions.",
-    heroTitle: "Roof inspections for owners, buyers, and post-storm concerns",
+      "Roof inspection in Los Angeles for post-storm follow-up, pre-sale and buyer checks, insurance documentation, and routine maintenance.",
+    heroTitle: "Roof inspection in Los Angeles for homeowners, buyers, and post-storm checks",
     summary:
-      "A roof inspection should turn uncertainty into a practical recommendation, especially when the owner needs to know whether a problem is urgent.",
+      "Rise Roofing provides roof inspection in Los Angeles and nearby cities such as Pasadena, Glendale, Burbank, and Santa Monica, whether you need a post-storm condition check, a pre-sale or buyer inspection, insurance documentation, or routine maintenance. A roof inspection should turn uncertainty into a practical recommendation, especially when an owner needs to know whether a problem is urgent or can wait.",
     bullets: [
-      "Post-storm visual condition checks",
-      "Inspection support before repair or replacement decisions",
-      "Clear findings and practical next-step guidance",
+      "Roof inspection across Los Angeles and nearby cities",
+      "Post-storm, pre-sale, insurance, and maintenance roof checks",
+      "Clear findings with practical repair-or-replacement guidance",
     ],
     symptoms: [
-      "Roof questions after wind, rain, or debris impact",
-      "Aging roof materials or visible surface wear",
-      "Buying, selling, or insurance-related roof concerns",
-      "Small stains or exterior issues that need a professional opinion",
+      "Roof questions after wind, rain, or debris during a Los Angeles storm",
+      "Aging roof materials or visible wear before listing or buying a home",
+      "Insurance or claim questions that need a documented roof condition",
+      "Stains, leaks, or exterior issues that need a professional inspection opinion",
     ],
     process: [
-      "Gather the reason for the inspection",
-      "Check the roof areas tied to the concern",
-      "Explain condition, risk, and next step",
+      "Gather the reason for the roof inspection",
+      "Check the roof areas tied to the storm, sale, insurance, or maintenance concern",
+      "Explain condition, risk, and the next step in plain language",
       "Recommend repair, replacement planning, or monitoring",
     ],
     faqs: [
       {
-        question: "When should I schedule a roof inspection?",
+        question: "Does Rise Roofing handle roof inspection in Los Angeles and nearby cities?",
         answer:
-          "Schedule an inspection after storm damage, before major roof decisions, when leaks appear, or when the roof condition is uncertain.",
+          "Yes. Rise Roofing provides roof inspection in Los Angeles and nearby cities such as Pasadena, Glendale, Burbank, and Santa Monica, for homes, multi-unit properties, and managed buildings.",
+      },
+      {
+        question: "When should I schedule a roof inspection in Los Angeles?",
+        answer:
+          "Schedule a roof inspection after a storm or high winds, before buying or selling a home, as part of routine maintenance, or whenever a leak appears or the roof condition is uncertain.",
+      },
+      {
+        question: "Can you inspect a roof before I buy or sell a home in Los Angeles?",
+        answer:
+          "Yes. A pre-sale or buyer roof inspection reviews the roof's current condition and remaining life so you can plan repairs, negotiate, or move forward with clear information.",
+      },
+      {
+        question: "Can a roof inspection help with an insurance or storm-damage claim?",
+        answer:
+          "Yes. A post-storm roof inspection can document visible damage and give next-step guidance to support an insurance conversation, without guessing the outcome of any claim.",
       },
       ...sharedServiceFaqs,
     ],
     proofPoints: [
-      "Inspection content helps users prepare details before the call.",
-      "Future photo documentation can plug directly into the proof section.",
-      "FAQ schema supports inspection-intent searches without overclaiming.",
+      "Inspection content helps Los Angeles owners and buyers prepare details before the call.",
+      "Future inspection photos and reports can plug directly into the proof section.",
+      "FAQ schema supports roof-inspection search intent without overclaiming.",
     ],
     conversionNote:
-      "If you are not sure whether a roof problem is serious, start with a call and describe what you can see.",
+      "For a roof inspection in Los Angeles, call with the property type, the reason for the inspection (storm, sale, insurance, or maintenance), and any leak or damage you can see, or request a free estimate online.",
   },
   {
     slug: "emergency-roofing",
