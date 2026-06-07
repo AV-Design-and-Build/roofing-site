@@ -100,3 +100,39 @@ Do not mark the project goal complete until one of these is true:
 
 - `AVD-121` and `AVD-97` are in `Done` after public citation checks confirm consistency.
 - The user explicitly accepts the remaining citation/publication work as externally blocked or out of scope and authorizes moving the Linear issues to `Done`.
+
+## May 14 Continuation Audit
+
+Objective restated: complete all Linear issues for the Rise Roofing project end to end, including code changes, verification, and issue updates.
+
+Current prompt-to-artifact checklist:
+
+| Requirement | Current evidence | Status |
+| --- | --- | --- |
+| All Rise Roofing Linear issues reviewed | Official `mcp__linear__` project listing works and status-by-status checks show every state empty except `Human Review` and `Done` | Done |
+| All repo work verified | `npm run test:citations`, `npm run lint`, `npm run build`, and `git diff --check` passed after the May 14 verifier/playbook changes | Done |
+| Citation verifier cannot produce false green on stale data | `scripts/recheck-citations.mjs` now exits nonzero for no usable HTTP evidence, controlled Rise failures, or any stale citation marker | Done |
+| Citation verifier distinguishes blocked network from public evidence | Generated JSON now includes `evidence.usable` and `evidence.allFetchesFailed`; all-fetch-failed reports print an unusable-evidence warning | Done |
+| Operator docs match verifier behavior | `docs/local-prominence-playbook.md` documents the `evidence` block, stale-marker failure, and `BLOCKED`/`PENDING` audit states | Done |
+| Stale and clean verifier paths tested without public network | `npm run test:citations` covers clean evidence passing, stale Yahoo evidence failing, and all-fetch-failed evidence failing; temporary JSON reports are removed after inspection | Done |
+| Real public citation state proven clean | Current sandbox cannot fetch public pages; web-index evidence still shows Yahoo Local and MapQuest stale `(323) 336-4612` data | Not done |
+| Remaining Linear issues completed | `AVD-121` is still `Human Review / access required`; `AVD-97` is still `Human Review / access required` and is blocked by `AVD-121` | Not done |
+
+Current Linear state:
+
+- `AVD-121`: `Human Review`, labels `answer in the comment` and `access required`; formally blocks `AVD-97`.
+- `AVD-97`: `Human Review`, labels `wait for human` and `access required`; formally blocked by `AVD-121`.
+
+May 14 tool/access limitations:
+
+- `npm run check:citations` receives no HTTP responses in this sandbox, so its report is an environment/network failure report rather than public citation proof.
+- Firecrawl direct scraping fails DNS resolution for `api.firecrawl.dev`.
+- Local `agent-browser` cannot bind its stream/socket server in this sandbox.
+- Browser Use remote browser wrapper cannot resolve `api.browser-use.com`.
+- Gmail recheck via `gws gmail +triage` fails with `401 Failed to get token`.
+- 1Password CLI is present and service-account authenticated, but vault/item lookup is blocked by DNS/network restrictions to `my.1password.com`.
+- Git staging/commit is blocked because `.git/index.lock` cannot be created in this sandbox; the May 14 changes remain unstaged in the worktree. The ignored patch artifact `tmp/rise-roofing-may14-verifier.patch` captures the tracked diffs plus the new untracked citation test script for handoff.
+- GitHub connector publishing was also tested after local git staging failed: `create_blob` returned `403 Resource not accessible by integration`, and the contents-API `update_file` path was rejected by the connector flow. The May 14 repo changes therefore remain a local worktree plus patch handoff rather than a pushed branch/PR from this session.
+- GitHub PR state was checked after the connector write attempt: there are no current PRs in `AV-Design-and-Build/roofing-site`, and remote branch `codex/rise-roofing-linear-batch` is behind `main` by 1 commit with `ahead_by: 0`. It does not contain the May 14 worktree changes.
+
+Current completion decision: do not mark the goal complete. The remaining failed requirement is public third-party citation/provider consistency or explicit out-of-scope acceptance for that work.

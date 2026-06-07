@@ -179,6 +179,10 @@ for (const check of checks) {
   }
 }
 
+const evidenceUsable = results.some((result) => typeof result.status === "number");
+const controlledFailureDetected = results.some((result) => result.controlledFailure);
+const staleDetected = results.some((result) => result.stalePresent);
+
 const report = {
   timestamp,
   canonical: {
@@ -186,6 +190,13 @@ const report = {
     phone: canonicalPhone,
     website: `https://${canonicalDomain}/`,
     stalePhone,
+  },
+  evidence: {
+    usable: evidenceUsable,
+    allFetchesFailed: !evidenceUsable,
+    note: evidenceUsable
+      ? "At least one HTTP response was received during this citation check."
+      : "No HTTP responses were received. Treat this as an environment/network failure report, not as proof of current public citation state.",
   },
   results,
 };
@@ -214,6 +225,12 @@ for (const result of results) {
 
 console.log(`\nWrote ${outPath}`);
 
-if (results.some((result) => result.controlledFailure)) {
+if (!evidenceUsable) {
+  console.log(
+    "\nWARNING No HTTP responses were received; this report is not usable as public citation evidence.",
+  );
+}
+
+if (!evidenceUsable || controlledFailureDetected || staleDetected) {
   process.exitCode = 1;
 }

@@ -76,9 +76,11 @@ Hold for later:
 
 - Run `npm run check:citations` to recheck the controlled site and stale external citation URLs.
 - The command writes a dated JSON report under `tmp/citation-rechecks/`, which is ignored by git.
-- The controlled Rise Roofing URLs fail the command if canonical NAP disappears or stale phone data appears.
-- External URLs are reported as `STALE`, `BLOCKED`, `PENDING`, or `OK` without failing the command, because Yelp, Yahoo, MapQuest, Facebook, BBB, Nextdoor, Apple Business Connect, and similar platforms can block automated requests, require login/verification, or wait on human review.
+- The report includes an `evidence` block. If no HTTP responses are received, `evidence.usable` is `false`; treat that as an environment/network failure report, not proof of the current public citation state.
+- The command exits nonzero if no usable HTTP evidence is gathered, if a controlled Rise Roofing URL loses canonical NAP or shows stale phone data, or if any checked URL shows a stale citation marker.
+- External URLs are still reported as `STALE`, `BLOCKED`, `PENDING`, or `OK`. `STALE` now fails the command; `BLOCKED` and `PENDING` remain audit states because Yelp, Yahoo, MapQuest, Facebook, BBB, Nextdoor, Apple Business Connect, and similar platforms can block automated requests, require login/verification, or wait on human review.
 - The current verifier covers controlled site URLs, Yahoo Local, Yelp, MapQuest, Facebook, BBB search, Nextdoor create-business, Apple Business Connect, and Bing Maps. It cannot replace owner-account verification for platforms that intentionally hide or block profile-editing details.
+- Run `npm run test:citations` to verify the checker contract without public network access. It covers clean evidence passing, stale Yahoo evidence failing, and all-fetch-failed evidence failing.
 
 ## Access Audit
 

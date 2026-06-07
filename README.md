@@ -16,9 +16,19 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the public site by modifying `src/app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Useful Commands
+
+```bash
+npm run lint
+npm run build
+npm run check:citations
+npm run test:citations
+```
+
+- `check:citations` fetches controlled Rise Roofing URLs and priority citation/profile URLs, then writes a dated JSON report under `tmp/citation-rechecks/`.
+- `test:citations` runs the citation checker against mocked clean, stale, and all-fetch-failed cases without public network access.
 
 ## Learn More
 
