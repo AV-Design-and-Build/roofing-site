@@ -141,6 +141,64 @@ const services: Service[] = [
       "For active leaks or storm damage, call first so the team can understand urgency before a form is submitted.",
   },
   {
+    slug: "roof-leak-repair",
+    title: "Roof Leak Repair",
+    shortLabel: "Roof leak repair",
+    thumbnailImage: "/site/service-roof-repair.jpg",
+    heroImage: "/site/hero-roof-repair.jpg",
+    metaTitle: "Roof Leak Repair in Los Angeles",
+    metaDescription:
+      "Roof leak repair in Los Angeles from Rise Roofing — leak tracing, flashing and shingle fixes, and clear next steps before water damage spreads. Call (818) 714-7330 for a free estimate.",
+    excerpt:
+      "Roof leak repair in Los Angeles — leak tracing, flashing and shingle fixes, and a clear plan to stop water entry before it spreads.",
+    heroTitle: "Roof leak repair in Los Angeles and nearby cities",
+    summary:
+      "A roof leak rarely fixes itself, and the longer water moves through a roof the more it costs. Rise Roofing approaches roof leak repair in Los Angeles by tracing the leak to its real source, explaining what is urgent, and repairing the flashing, shingle, or roof-penetration detail that is letting water in.",
+    bullets: [
+      "Roof leak repair across Los Angeles and nearby cities",
+      "Leak tracing to the real source, not just the stain",
+      "Flashing, shingle, vent, and roof-penetration leak fixes",
+    ],
+    symptoms: [
+      "Active drips, ceiling stains, or bubbling paint during or after rain",
+      "Water tracking around a chimney, skylight, vent, or roof valley",
+      "Damp drywall, musty smells, or attic moisture after storms",
+      "A small leak that keeps returning even after a previous patch",
+    ],
+    process: [
+      "Describe the leak, when it started, and where water shows up",
+      "Inspect the roof and the flashing and penetration details tied to the leak",
+      "Explain the likely source and the roof leak repair options in plain language",
+      "Complete the approved repair and document what was fixed",
+    ],
+    faqs: [
+      {
+        question: "Do you handle roof leak repair in Los Angeles and nearby cities?",
+        answer:
+          "Yes. Rise Roofing handles roof leak repair across Los Angeles and nearby cities such as Pasadena, Glendale, Burbank, and Santa Monica, from a single stubborn leak to storm-related water entry.",
+      },
+      {
+        question: "How fast can you fix a roof leak in Los Angeles?",
+        answer:
+          "Timing depends on the cause and the weather, but active leaks are treated as urgent. Calling first is the fastest path so the team can gauge urgency, talk through temporary protection if needed, and schedule the roof leak repair.",
+      },
+      {
+        question: "How do you find where a roof leak is actually coming from?",
+        answer:
+          "Water usually enters at one point on the roof and shows up somewhere else inside, so a roof leak repair starts by tracing the interior sign back to the roof detail above it — flashing, a penetration, a valley, or worn material. Finding the true source is what keeps the repair from turning into a repeat visit.",
+      },
+      ...sharedServiceFaqs,
+    ],
+    proofPoints: [
+      "Leak repair recommendations explain the source, urgency, and next step in plain language.",
+      "Inspection photos can be added later as real proof assets once available.",
+      "Call-first CTAs keep urgent roof leak conversations easy to start.",
+    ],
+    conversionNote:
+      "For an active roof leak in Los Angeles, call first so the team can gauge urgency and talk through temporary protection before water damage spreads.",
+    relatedServices: ["roof-repair", "emergency-roofing", "roof-inspections"],
+  },
+  {
     slug: "roof-replacement",
     title: "Roof Replacement",
     shortLabel: "Roof replacement",
