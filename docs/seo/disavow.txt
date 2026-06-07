@@ -1,0 +1,26 @@
+# Google disavow file for riseroofingav.com
+# ------------------------------------------------------------------
+# Purpose: disavow toxic Fiverr/PBN backlinks (all nofollow, Authority
+#   Score 0, fake "DA rose from X to Y thanks to fiverr" testimonial
+#   anchors). Source: SEMrush backlink audit (18 backlinks / 15 referring
+#   domains, 0 followed). Tracked in Linear AVD-305.
+# Format: one "domain:" line per referring domain disavows that whole
+#   domain. Lines starting with "#" are comments and are ignored by Google.
+# Upload: Google Search Console > Disavow Links Tool. See README.md.
+# ------------------------------------------------------------------
+
+domain:analyticshaven.top
+domain:backlinks-checker.com
+domain:buzzshrink.website
+domain:byteshort.xyz
+domain:creativeposts.top
+domain:metamagic.top
+domain:optimizeflow.top
+domain:shortenurls.eu
+domain:8coint.com
+domain:fiverr-cost-effective-seo.site
+domain:fiverr-affordable-seo-services.site
+domain:fiverr-quality-seo-at-affordable-rates.site
+domain:fiverr-seo-for-business-growth.site
+domain:fiverr-seo-for-small-businesses.site
+domain:toplikevideo.com
