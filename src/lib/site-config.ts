@@ -18,6 +18,8 @@ export type Service = {
   faqs: FaqItem[];
   proofPoints: string[];
   conversionNote: string;
+  metaTitle?: string;
+  metaDescription?: string;
 };
 
 export type AreaGroup = {
@@ -227,43 +229,61 @@ const services: Service[] = [
     shortLabel: "Commercial roofing",
     thumbnailImage: "/site/hero-commercial-roofing.jpg",
     heroImage: "/site/hero-commercial-roofing.jpg",
+    metaTitle: "Commercial Roofing in Los Angeles",
+    metaDescription:
+      "Commercial roofing in Los Angeles from Rise Roofing — flat and low-slope roof repair, replacement, and maintenance for property managers and business owners. Call (818) 714-7330 for a free estimate.",
     excerpt:
-      "Commercial roofing support for buildings that need responsive communication, organized scheduling, and dependable scope clarity.",
-    heroTitle: "Commercial roofing for property managers and business owners",
+      "Commercial roofing in Los Angeles — flat and low-slope roof repair, replacement, and maintenance for offices, retail, and managed properties.",
+    heroTitle: "Commercial roofing in Los Angeles for property managers and business owners",
     summary:
-      "Commercial roofing conversations need less fluff and more clarity: what is happening, how urgent it is, what access is needed, and how disruption can be reduced.",
+      "Rise Roofing works with property managers and business owners across Los Angeles on commercial roof repair, replacement, and maintenance, including flat and low-slope systems. Every conversation stays clear about what is happening, how urgent it is, what roof access is needed, and how to keep disruption to tenants and operations low.",
     bullets: [
-      "Commercial roof repair and replacement conversations",
-      "Scope planning for offices, retail, and mixed-use properties",
-      "Scheduling that respects business operations",
+      "Commercial roof repair and replacement across Los Angeles",
+      "Flat and low-slope systems: TPO, modified bitumen, and built-up roofs",
+      "Scheduling that respects tenants, retail hours, and business operations",
     ],
     symptoms: [
-      "Water entry near tenants, offices, inventory, or electrical areas",
-      "Flat-roof ponding, membrane wear, or rooftop-equipment details",
-      "Storm damage or recurring maintenance issues",
-      "Owner or manager needs for documentation and scheduling clarity",
+      "Water entry near tenants, offices, inventory, or electrical panels",
+      "Ponding, blistering, or seam and membrane wear on a flat or low-slope roof",
+      "Aging built-up, TPO, or modified-bitumen roofs nearing the end of their service life",
+      "Storm or wind damage, or recurring leaks a property manager needs documented",
     ],
     process: [
-      "Clarify building access and urgency",
-      "Inspect roof areas tied to the leak or concern",
-      "Separate immediate stabilization from longer-term work",
-      "Provide a practical plan for next steps and scheduling",
+      "Clarify the building, roof system, access, and urgency",
+      "Inspect the roof areas tied to the leak or concern",
+      "Separate immediate stabilization from longer-term repair or replacement",
+      "Provide a practical scope, scheduling plan, and free estimate",
     ],
     faqs: [
       {
-        question: "Can Rise Roofing work with property managers?",
+        question: "Does Rise Roofing handle commercial roofing in Los Angeles and nearby cities?",
         answer:
-          "Yes. Commercial inquiries can start with the building type, access notes, leak location, and urgency so the right next step is clear.",
+          "Yes. Rise Roofing handles commercial roofing across Los Angeles and nearby cities such as Pasadena, Glendale, Burbank, and Santa Monica, from single-store retail to office and mixed-use buildings.",
+      },
+      {
+        question: "Are you commercial roofing contractors who give free estimates?",
+        answer:
+          "Yes. As commercial roofing contractors serving Los Angeles, Rise Roofing starts with a free estimate conversation focused on the roof condition, urgency, and the access your building needs.",
+      },
+      {
+        question: "Can Rise Roofing work with property managers on commercial roof repair?",
+        answer:
+          "Yes. Commercial roof repair inquiries can start with the building type, roof system, access notes, leak location, and urgency, and property managers can request documentation for owners and tenants.",
+      },
+      {
+        question: "What commercial roofing systems do you repair and replace?",
+        answer:
+          "Most Los Angeles commercial buildings use flat or low-slope roofs, such as TPO, modified bitumen, or built-up systems. Rise Roofing can inspect these, scope a repair, or plan a replacement when a roof is past its service life.",
       },
       ...sharedServiceFaqs,
     ],
     proofPoints: [
-      "Commercial copy emphasizes access, scheduling, and scope clarity.",
-      "The template leaves room for real building-type proof once available.",
-      "Phone CTAs help managers describe urgent operational concerns quickly.",
+      "Commercial copy emphasizes roof system, access, scheduling, and scope clarity.",
+      "The template leaves room for real Los Angeles building-type proof once available.",
+      "Phone CTAs help property managers describe urgent operational concerns quickly.",
     ],
     conversionNote:
-      "For commercial issues, call with the building type, leak location, access constraints, and urgency.",
+      "For commercial roofing in Los Angeles, call with the building type, roof system, leak location, access constraints, and urgency, or request a free estimate online.",
   },
   {
     slug: "roof-inspections",
