@@ -58,6 +58,10 @@ export type BlogPost = {
     body: string[];
   }[];
   faqs: FaqItem[];
+  relatedLinks?: {
+    href: string;
+    label: string;
+  }[];
 };
 
 export type ProjectProofPage = {
@@ -1164,6 +1168,234 @@ const blogPosts: BlogPost[] = [
         question: "Should I call if I need replacement quickly?",
         answer:
           "Yes. Call first if timing is urgent because phone is the fastest way to discuss scheduling constraints.",
+      },
+    ],
+  },
+  {
+    slug: "roof-leak-repair-cost-los-angeles",
+    title: "How Much Does It Cost to Repair a Roof Leak?",
+    description: "How much does it cost to repair a roof leak? A no-price-range guide to what changes leak repair scope in Los Angeles, plus free estimate, financing, and storm help.",
+    excerpt: "Understand what makes a roof leak repair simple or involved before you ask \"how much\" — and why a real diagnosis beats a generic price.",
+    category: "Leak repair cost",
+    readTime: "6 min read",
+    publishedAt: "2026-06-07",
+    heroImage: "/site/hero-roof-repair.jpg",
+    sections: [
+      {
+        heading: "Why \"how much does it cost to repair a roof leak\" has no single answer",
+        body: [
+          "The honest answer to how much it costs to repair a roof leak is that it depends on what is actually leaking, not on a number you can look up before anyone has seen the roof. A leak is a symptom, and two roofs with the same stain on the ceiling can need very different work once the source is found.",
+          "Rather than publish a price range that may not fit your roof, Rise Roofing uses a free estimate conversation. That way the recommendation matches the real leak source, the real damage, and the real access on your property in the Los Angeles area, instead of a generic figure that ignores all three.",
+          "If water is actively coming in, treat the cost question as a second step. Call first so temporary protection or emergency response can be discussed, then sort out scope and pricing once the leak is under control.",
+        ],
+      },
+      {
+        heading: "What makes a leak repair simple or involved",
+        body: [
+          "A simple leak is usually one you can tie to a single, reachable failure point: a few damaged shingles, a loose piece of flashing around a vent or chimney, a worn pipe boot, or a small gap where two roof surfaces meet. When the source is obvious and the surrounding roof is healthy, the repair tends to be contained.",
+          "A leak becomes more involved when water travels. Water can enter at one spot and show up several feet away inside the home, so finding the true entry point is part of the work. The repair type matters too — sealing flashing is different from patching shingles, which is different again from repairing a flat or low-slope membrane, and each calls for different materials and time.",
+          "The roof under the leak matters as much as the leak itself. If water has reached the decking, soaked insulation, or stained drywall, those layers may need attention beyond the surface fix. How long the roof has been leaking, how steep it is, and how easy it is to reach all change the scope as well — a long-running leak on a hard-to-access section is rarely the same job as a fresh leak you caught early.",
+        ],
+      },
+      {
+        heading: "Why a real diagnosis beats a generic price",
+        body: [
+          "A number pulled from a search result assumes someone already knows your leak source, your roof material, and how far the water has spread. None of that is visible from a stain on the ceiling, which is why a quick inspection usually saves money rather than costing it — fixing the wrong spot leaves the real leak active and the damage growing.",
+          "For safety, do not climb onto a wet, damaged, or steep roof to investigate. Look from inside the home or from the ground, note where water appears and when it started, and let a professional handle roof access. Photos taken safely from inside or at ground level can help the conversation before anyone arrives.",
+          "A good estimate explains what was checked, what is causing the leak, and whether the fix is a contained repair or a sign of a larger roof-life issue. That is the part a generic price can never give you, and it is the part that tells you whether you are spending wisely.",
+        ],
+      },
+      {
+        heading: "Financing, storm leaks, and insurance-claim help",
+        body: [
+          "When a roof leak repair turns out to be larger than expected, financing can be part of the conversation so the timing of payment does not force a smaller fix than the roof needs. The goal is to repair the leak correctly, not to cut the scope to match a budget guess.",
+          "Many leaks across Los Angeles County, from Pasadena to Glendale, follow wind or heavy rain. For storm-related leaks, Rise Roofing can help you understand what information and photos may support an insurance claim, while never promising a particular claim outcome — that decision belongs to your insurer.",
+          "Whether the leak is a small flashing fix or a storm-driven problem across several areas, the next step is the same: call Rise Roofing at (818) 714-7330 or send the estimate form with details and any safe photos, and get pricing through a real conversation about your roof.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "How much does it cost to repair a roof leak?",
+        answer: "There is no single price, because the cost depends on the leak source, the roof material, how far the water has traveled, and how much underlying damage exists. Rise Roofing gives pricing through a free estimate conversation after the leak is diagnosed, rather than a generic range.",
+      },
+      {
+        question: "How much does a roof leak repair cost?",
+        answer: "It varies with what is actually leaking — flashing, shingles, a pipe boot, or a flat-roof membrane all differ, and a long-running or hard-to-reach leak adds scope. The accurate way to learn the cost is a real diagnosis, so Rise Roofing invites callers to get details through a free estimate.",
+      },
+      {
+        question: "How much does it cost to repair a roof if water has reached the ceiling?",
+        answer: "A stained ceiling can mean the water has traveled from a different entry point and may have reached decking or insulation, which changes the scope. An inspection is the only reliable way to price it, and Rise Roofing covers that in a free estimate conversation without quoting figures up front.",
+      },
+      {
+        question: "Can financing or insurance help cover a roof leak repair?",
+        answer: "Financing can be discussed when a leak repair is larger than expected, and for storm-related leaks Rise Roofing can help you understand what photos and information may support an insurance claim. We never promise a claim outcome, since that decision belongs to your insurer.",
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/services/roof-repair",
+        label: "See how Rise Roofing handles roof leak repair",
+      },
+      {
+        href: "/services/roof-inspections",
+        label: "Book a roof inspection to find the leak source",
+      },
+      {
+        href: "/estimate",
+        label: "Request a free roof leak repair estimate",
+      },
+    ],
+  },
+  {
+    slug: "how-to-repair-a-roof-leak",
+    title: "How to Repair a Roof Leak: A Safety-First Guide",
+    description: "How to repair a roof leak the safe way: find where water enters, take temporary steps from inside, learn what a real fix involves, and know when to call a pro.",
+    excerpt: "A calm, safety-first walkthrough of how to find a roof leak, protect your home from the inside, and know when the repair really needs a professional.",
+    category: "Leak repair",
+    readTime: "7 min read",
+    publishedAt: "2026-06-07",
+    heroImage: "/site/service-roof-repair.jpg",
+    sections: [
+      {
+        heading: "How to find where a roof leak is coming from",
+        body: [
+          "The first thing to understand about how to repair a roof leak is that the wet spot you see is rarely where water enters the roof. Water travels along rafters, decking, and insulation before it drops, so a stain on a bedroom ceiling can trace back several feet uphill. When you are figuring out how to fix a roof leak, start indoors and from the ground, not on the roof.",
+          "Work the problem from inside the house first. In an attic or top-floor ceiling, look during or just after rain for damp wood, water trails, daylight through the deck, or dark staining around anything that pokes through the roof, such as vents, chimneys, skylights, and plumbing stacks. These penetrations and the flashing around them are the most common entry points, far more often than the open field of shingles.",
+          "From the ground, you can look up with binoculars for missing, curled, or lifted shingles, displaced tiles, or damaged flashing, especially after Santa Ana winds or a storm. Note what you see and where, but do not go up to confirm it. The point of this stage is to gather clues, not to fix anything yet.",
+        ],
+      },
+      {
+        heading: "Safe temporary steps you can take from inside",
+        body: [
+          "While you arrange a real repair, your job is to limit damage, not to patch the roof yourself. Place a bucket or bin under active drips and lay down towels or a tarp to protect floors and furniture. Move electronics, documents, and anything valuable well clear of the water.",
+          "If water is pooling above a ceiling and making it bulge, that trapped water is heavy and can bring the whole section down at once. Standing safely below it on the floor, you can pierce the lowest point of the bulge with a small nail or screwdriver to let it drain in a controlled way into a bucket. Keep people and pets away from that area, and stay alert to water near light fixtures or outlets, since water and electricity together are a serious hazard.",
+          "Take clear photos of the stains, drips, and any damaged materials as you go. Dated photos give a roofer a head start on the diagnosis and can be useful documentation if an insurance conversation follows later. Do not climb onto a wet, steep, or storm-damaged roof to place a tarp; rooftop work in those conditions is exactly what a professional with the right equipment is for.",
+        ],
+      },
+      {
+        heading: "What a real, lasting roof leak repair involves",
+        body: [
+          "A durable repair starts with finding the true source rather than smearing sealant over the nearest stain. A roofer traces the water path back to its origin, checks the surrounding area for related damage, and confirms whether the leak is one isolated failure or a symptom of a roof that is wearing out. Sealant over the wrong spot is the classic reason a leak keeps coming back.",
+          "From there, the fix depends on what failed. Worn or missing shingles are replaced and properly sealed and fastened. Loose or corroded flashing around chimneys, walls, vents, and skylights is reset or replaced, since failed flashing is behind a large share of leaks. On flat or low-slope roofs, the work shifts to membrane repair, where seams, blisters, and punctures are cleaned and patched with compatible material so the new section bonds to the old.",
+          "A proper repair also looks at the deck and underlayment beneath the surface. If water has been getting in for a while, wood can be soft or rotted, and that needs to be addressed or the new surface will fail early. This is why a quick patch and a real repair can look similar on day one but behave very differently a season later.",
+        ],
+      },
+      {
+        heading: "Clear signs the repair needs a professional",
+        body: [
+          "Be honest with yourself about scope. A handful of clues point firmly to calling a pro: the leak keeps returning after a patch, the stain is spreading, water is appearing in more than one spot, or the source is anywhere near a chimney, skylight, or flashing detail where a small mistake reopens the leak. Recurring or multi-point leaks usually mean a larger problem than one shingle.",
+          "Any situation that puts you on the roof is also a reason to call. Steep pitches, wet or damaged surfaces, tile and metal roofs, and anything storm-related are jobs for someone with fall protection and the right materials. The most common DIY outcome is a leak that quietly continues under a patch while the deck below keeps absorbing water.",
+          "Rise Roofing serves Los Angeles and nearby communities including Pasadena, Glendale, Burbank, and Santa Monica, and offers free estimates so you can get a real diagnosis before committing to anything. For an active leak or storm damage, calling at (818) 714-7330 is faster than a form, and emergency and storm repair help, plus insurance-claim guidance, can be part of that conversation.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "How do you repair a roof leak?",
+        answer: "You repair a roof leak by tracing water back to its true entry point, then fixing what failed there, such as replacing damaged shingles, resetting flashing around chimneys or vents, or patching a flat-roof membrane, and confirming the deck underneath is dry and sound. Lasting repairs almost always need a professional on the roof rather than a surface patch.",
+      },
+      {
+        question: "Can I fix a roof leak myself from the ground or inside?",
+        answer: "From inside you can safely contain drips with buckets and tarps, protect belongings, drain a bulging ceiling at its lowest point, and photograph the damage. The actual roof repair, however, almost always requires rooftop access and should be left to a professional, since climbing a wet, steep, or damaged roof is dangerous.",
+      },
+      {
+        question: "When should I call a professional for a roof leak instead of repairing it myself?",
+        answer: "Call a professional when a leak keeps coming back, the stain is spreading, water shows up in more than one place, the source is near flashing, a chimney, or a skylight, or any fix would require getting on the roof. These point to a larger problem than a quick patch can solve.",
+      },
+      {
+        question: "Why does my roof leak come back after I patch it?",
+        answer: "A patch usually fails because it was placed where the water shows up rather than where it actually enters, since water travels along the roof structure before dripping. A proper repair finds the real source and addresses any underlying damage to the flashing, underlayment, or deck.",
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/services/roof-repair",
+        label: "Roof leak repair services from Rise Roofing",
+      },
+      {
+        href: "/services/roof-inspections",
+        label: "Book a roof inspection to find the leak source",
+      },
+      {
+        href: "/estimate",
+        label: "Request a free roof leak repair estimate",
+      },
+    ],
+  },
+  {
+    slug: "commercial-roofing-los-angeles-guide",
+    title: "Commercial Roofing in Los Angeles: A Property Manager's Guide",
+    description: "A practical guide to commercial roofing in Los Angeles: flat and low-slope systems, common roof problems, tenant-aware scheduling, and repair vs. replacement.",
+    excerpt: "What makes commercial roofs different, the problems LA buildings see most, and how to plan repairs around tenants and business hours.",
+    category: "Commercial roofing",
+    readTime: "7 min read",
+    publishedAt: "2026-06-07",
+    heroImage: "/site/hero-commercial-roofing.jpg",
+    sections: [
+      {
+        heading: "What makes commercial roofing different from a house roof",
+        body: [
+          "Most commercial buildings in Los Angeles do not have the steep, shingled slopes you picture on a home. They have flat or low-slope roofs, which behave very differently because water does not run off quickly on its own. Instead of shingles, these roofs use membrane and built-up systems designed to seal a large, mostly level surface against standing water and sun exposure.",
+          "The three systems you will hear about most are TPO, modified bitumen, and built-up roofing, often called BUR. TPO is a single-ply membrane sheet that is heat-welded at the seams. Modified bitumen is an asphalt-based material applied in layers or rolls. Built-up roofing is the older layered tar-and-gravel approach still found on many established LA buildings. Each one ages, fails, and gets repaired in its own way, which is why the first question commercial roofing contractors ask on any job is what system is up there.",
+          "Because the surface is large and walkable, a commercial roof problem is rarely just about the roof. It usually involves tenants, inventory, electrical panels, or business operations directly below, so the goal is to understand the building, not just the leak.",
+        ],
+      },
+      {
+        heading: "Common commercial roof problems in Los Angeles",
+        body: [
+          "Ponding is the issue property managers run into most. When water sits in low spots instead of draining after rain, it slowly breaks down the membrane and adds weight to the structure. Blistering is another warning sign, where trapped air or moisture lifts the surface into bubbles that can crack open over time. On older roofs, seams and membrane edges wear, lift, or separate, and that is often where water finally gets in, which is why so much flat roof repair starts at the seams.",
+          "LA weather adds its own stress. Long stretches of intense sun degrade roofing materials and dry out seams, then a heavy seasonal storm exposes every weak point at once. That is why a roof can look fine for years and then leak suddenly during the first real rain.",
+          "What raises the urgency is where the water lands. Water appearing near tenants, offices, stocked inventory, or an electrical panel is not a wait-and-see situation. If you see active water entry near electrical equipment, keep people clear of it and call rather than investigating it yourself, and never send anyone onto a wet or damaged flat roof to look around.",
+        ],
+      },
+      {
+        heading: "Scheduling that respects tenants and business hours",
+        body: [
+          "A commercial roof repair is also a logistics problem. The work happens above people who are trying to run a business, so the plan has to account for retail hours, office occupancy, parking, roof access, and how much noise or disruption a given tenant can absorb. A good scope says not just what will be fixed, but when and how, so a property manager can give tenants honest notice.",
+          "Rise Roofing approaches commercial work by first clarifying the building type, the roof system, how the crew gets safe roof access, and how urgent the issue is. That lets the conversation separate what needs immediate stabilization from what can be scheduled around business operations.",
+          "When you call, having a few details ready makes the first conversation far more useful: the type of building, the roof system if you know it, where the leak or concern is showing up, how the roof is accessed, and how urgent it feels.",
+        ],
+      },
+      {
+        heading: "Repair vs. replacement, and the paperwork owners and tenants ask for",
+        body: [
+          "The repair-or-replace decision on a commercial roof comes down to pattern and remaining life. An isolated seam failure or a single damaged area on a roof with years left is usually a repair. Recurring leaks across multiple areas, widespread membrane wear, persistent ponding, or a built-up roof that is simply past its service life point toward planning a replacement instead of paying for the same fix again and again. That call should come from an inspection, not a guess.",
+          "Documentation matters more in commercial work than almost anywhere else, because property managers answer to owners and tenants. You can request notes on what was inspected, what was found, where the problem is, and what the recommended scope is, which helps when you need to justify a repair, plan a capital expense, or update a tenant. For larger replacement projects, financing can be part of the conversation.",
+          "If recent storm or wind damage is involved, Rise Roofing can help you understand what information and photos may support an insurance conversation, while being clear that no one can promise a particular claim outcome. The first step in every case is the same: a free estimate that fits the actual building rather than a generic quote.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Who provides commercial roofing in Los Angeles?",
+        answer: "Rise Roofing provides commercial roofing across Los Angeles and nearby cities such as Pasadena, Glendale, Burbank, and Santa Monica. The work covers flat and low-slope roof repair, replacement, and maintenance for property managers and business owners, and starts with a free estimate. Call (818) 714-7330.",
+      },
+      {
+        question: "What flat or low-slope roofing systems do commercial buildings use?",
+        answer: "Most Los Angeles commercial buildings use flat or low-slope systems such as TPO, modified bitumen, or built-up roofing (BUR). Each ages and fails differently, so identifying the system on your building is the first step in scoping any repair or replacement.",
+      },
+      {
+        question: "How much does commercial roof repair cost in Los Angeles?",
+        answer: "There is no flat price, because cost depends on the roof system, the size and access of the building, how far the damage has spread, and whether it is an isolated repair or part of a larger roof-life problem. Rise Roofing uses a free estimate conversation so the recommendation fits your actual building.",
+      },
+      {
+        question: "Can you schedule commercial roof work around our tenants and business hours?",
+        answer: "Yes. Commercial scheduling is planned around retail hours, office occupancy, roof access, and tenant disruption, and immediate stabilization can be separated from work that fits your operating schedule. Property managers can also request documentation to share with owners and tenants.",
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/services/commercial-roofing",
+        label: "Commercial roofing in Los Angeles: repair, replacement, and maintenance",
+      },
+      {
+        href: "/services/roof-inspections",
+        label: "Schedule a commercial roof inspection",
+      },
+      {
+        href: "/estimate",
+        label: "Get a free commercial roofing estimate",
       },
     ],
   },

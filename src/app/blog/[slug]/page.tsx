@@ -166,6 +166,24 @@ export default async function BlogPostPage({ params }: Props) {
               ))}
             </div>
           </section>
+
+          {post.relatedLinks && post.relatedLinks.length > 0 ? (
+            <section className="border-t border-stone-200 pt-8">
+              <h2 className="text-3xl font-extrabold text-[#10233c]">Helpful next steps</h2>
+              <ul className="mt-5 grid gap-3">
+                {post.relatedLinks.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className="inline-flex text-lg font-bold text-[#10233c] underline decoration-[#b88a44] underline-offset-4 transition hover:text-[#b88a44]"
+                    >
+                      {link.label} →
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
         </div>
       </article>
 
