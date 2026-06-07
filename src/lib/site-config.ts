@@ -77,6 +77,10 @@ const productionSiteUrl = "https://riseroofingav.com";
 
 const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? productionSiteUrl).replace(/\/$/, "");
 
+const googleBusinessProfileUrl = "https://share.google/Jbeck6wakyPavHWgz";
+const instagramUrl = "https://www.instagram.com/rise_roofing_";
+const socialProfiles = [googleBusinessProfileUrl, instagramUrl];
+
 const sharedServiceFaqs: FaqItem[] = [
   {
     question: "Can Rise Roofing help with a free estimate?",
@@ -1136,6 +1140,7 @@ const proofHighlights = [
 export const siteConfig = {
   businessName: "Rise Roofing",
   legalName: "Rise Roofing",
+  alternateNames: ["Rise Roof", "Rise Roofing AV"],
   primaryCity: "Los Angeles",
   state: "CA",
   audience: "Residential & commercial roofing",
@@ -1144,7 +1149,9 @@ export const siteConfig = {
   phoneHref: "tel:+18187147330",
   siteUrl,
   productionSiteUrl,
-  googleBusinessProfileUrl: "https://share.google/Jbeck6wakyPavHWgz",
+  googleBusinessProfileUrl,
+  instagramUrl,
+  socialProfiles,
   reviewRating: 5.0,
   reviewCount: 7,
   serviceAreaLabel: "Los Angeles County and nearby Southern California service areas",

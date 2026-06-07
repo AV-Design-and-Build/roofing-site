@@ -23,7 +23,7 @@ export default function ReviewsPage() {
       ratingValue: siteConfig.reviewRating,
       reviewCount: siteConfig.reviewCount,
     },
-    sameAs: [siteConfig.googleBusinessProfileUrl],
+    sameAs: siteConfig.socialProfiles,
   };
 
   return (

@@ -57,7 +57,7 @@ export default async function CityPage({ params }: Props) {
           ratingValue: siteConfig.reviewRating,
           reviewCount: siteConfig.reviewCount,
         },
-        sameAs: [siteConfig.googleBusinessProfileUrl],
+        sameAs: siteConfig.socialProfiles,
       },
       {
         "@type": "Service",

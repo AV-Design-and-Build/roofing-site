@@ -2,24 +2,40 @@ import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 
+const businessId = `${siteConfig.siteUrl}/#business`;
+
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "RoofingContractor",
-  name: siteConfig.businessName,
-  alternateName: siteConfig.legalName,
-  description: siteConfig.metaDescription,
-  url: siteConfig.siteUrl,
-  telephone: siteConfig.phoneE164,
-  areaServed: siteConfig.allCities.map((city) => ({
-    "@type": "City",
-    name: city,
-  })),
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: siteConfig.reviewRating,
-    reviewCount: siteConfig.reviewCount,
-  },
-  sameAs: [siteConfig.googleBusinessProfileUrl],
+  "@graph": [
+    {
+      "@type": ["RoofingContractor", "LocalBusiness", "Organization"],
+      "@id": businessId,
+      name: siteConfig.businessName,
+      alternateName: siteConfig.alternateNames,
+      description: siteConfig.metaDescription,
+      url: siteConfig.siteUrl,
+      telephone: siteConfig.phoneE164,
+      logo: `${siteConfig.siteUrl}${siteConfig.brand.primaryLogo}`,
+      image: `${siteConfig.siteUrl}/site/og-rise-roofing.jpg`,
+      areaServed: siteConfig.allCities.map((city) => ({
+        "@type": "City",
+        name: city,
+      })),
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: siteConfig.reviewRating,
+        reviewCount: siteConfig.reviewCount,
+      },
+      sameAs: siteConfig.socialProfiles,
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${siteConfig.siteUrl}/#website`,
+      name: siteConfig.businessName,
+      url: siteConfig.siteUrl,
+      publisher: { "@id": businessId },
+    },
+  ],
 };
 
 const featuredServices = [
@@ -60,7 +76,7 @@ export default function Home() {
               Los Angeles Roofing Services
             </p>
             <h1 className="mt-6 max-w-5xl font-[family-name:var(--font-heading)] text-6xl uppercase leading-[0.92] tracking-[0.05em] text-white sm:text-7xl lg:text-[5.5rem]">
-              Roof repair, roof replacement, and roofing services across Los Angeles.
+              Rise Roofing — Los Angeles roof repair, replacement, and inspections.
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200 sm:text-xl">
               Rise Roofing helps residential and commercial property owners understand the next step when a roof is leaking, aging, storm-damaged, or ready for replacement.
