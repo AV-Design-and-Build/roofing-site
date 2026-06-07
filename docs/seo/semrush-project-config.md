@@ -144,41 +144,54 @@ starting point.
 | Estimated organic traffic | 0 / mo |
 | Organic traffic cost | $0 |
 | SEMrush rank | 20,705,919 |
-| Authority Score | record from dashboard (not exposed via API export) |
+| Authority Score | 0 (Semrush rank 19.7M) |
 
 Interpretation: brand-new/low-authority domain. Effectively none of the 15 tracked terms
 rank yet, which is why the wave targets low-KD money terms first and defers head terms.
 
 ### 4.2 Position Tracking baseline (record after first data pull)
 
-| Metric | Value (fill in) |
+| Metric | Value (2026-06-07) |
 | --- | --- |
-| Snapshot date | |
-| Visibility % (Mobile) | |
-| Visibility % (Desktop) | |
-| Average position | |
-| Keywords in top 3 / 10 / 20 / 100 | |
-| Keywords ranking at all (of 15) | |
-| SERP features captured | |
+| Snapshot date | 2026-06-07 |
+| Visibility % (Los Angeles / Mobile target) | 0.05% |
+| Visibility % (United States / Desktop target) | 0.12% |
+| Average position | ~75 (only 2 keywords rank, at #61 and #64) |
+| Keywords in top 3 / 10 / 20 / 100 | 0 / 0 / 0 / 2 |
+| Of our 15 wave keywords ranking | 1 - "emergency roof repair los angeles" (#64). The other top-100 term (#61) is the pre-existing "24/7 emergency roofing los angeles" auto-keyword, not a wave target. All other target money terms are unranked. |
+| SERP features | Local Pack / Reviews / FAQ tracked; none captured by the domain yet |
 
 ### 4.3 Site Audit baseline (record after first crawl)
 
-| Metric | Value (fill in) |
+| Metric | Value (2026-06-07) |
 | --- | --- |
-| Crawl date | |
-| Site Health % | |
-| Pages crawled | |
-| Errors | |
-| Warnings | |
-| Notices | |
-| Top issues | |
+| Crawl date | 2026-06-07 |
+| Site Health % | 91% |
+| AI Search Health % | 89% |
+| Pages crawled | 33 (full site; 100 was only the crawl cap) |
+| Crawlability | 100% |
+| HTTPS | 100% |
+| Errors | 31 |
+| Warnings | 31 |
+| Notices | not recorded (see dashboard) |
+| Top issues | 31 errors + 31 warnings on a 33-page site - drill into Site Audit > Issues for specifics (good follow-up) |
 
 ## 5. Acceptance criteria status
 
 - [x] Keyword list committed - `docs/seo/riseroofingav-tracking-keywords.csv`.
 - [x] Config spec committed - this file.
-- [ ] (Owner/access) Position Tracking + Site Audit configured in SEMrush dashboard.
-- [ ] (Owner/access) Baseline snapshot recorded in sections 4.2 and 4.3.
+- [x] Position Tracking + Site Audit configured in the SEMrush dashboard (set up 2026-06-07; SEO project/folder id 12141155).
+- [x] Baseline snapshot recorded in sections 4.2 and 4.3.
+
+### Live configuration (set up 2026-06-07)
+
+- SEMrush SEO project: `riseroofingav.com` (project/folder id 12141155).
+- Site Audit: first crawl run (33 pages, weekly default). Follow-up polish: set a weekly Monday schedule and add `/admin` + `/api` disallow masks.
+- Position Tracking targets (all tracking the 15 wave keywords + cluster tags):
+  - **Los Angeles, CA - Mobile** - primary local target; business name "Rise Roofing" set for local map-pack tracking.
+  - **United States - Desktop** - auto-created national benchmark.
+  - Optional add-on (deferred, per spec): Los Angeles, CA - Desktop.
+- Weekly ranking email updates enabled.
 
 ## 6. How this connects to the wave
 
