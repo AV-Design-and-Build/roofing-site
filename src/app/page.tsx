@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { siteConfig } from "@/lib/site-config";
+import { serviceMap, siteConfig } from "@/lib/site-config";
 
 const businessId = `${siteConfig.siteUrl}/#business`;
 
@@ -39,18 +39,10 @@ const jsonLd = {
 };
 
 const featuredServices = [
-  {
-    service: siteConfig.services.find((item) => item.slug === "roof-repair") ?? siteConfig.services[0],
-  },
-  {
-    service: siteConfig.services.find((item) => item.slug === "roof-replacement") ?? siteConfig.services[1],
-  },
-  {
-    service: siteConfig.services.find((item) => item.slug === "roof-inspections") ?? siteConfig.services[4],
-  },
-  {
-    service: siteConfig.services.find((item) => item.slug === "emergency-roofing") ?? siteConfig.services[5],
-  },
+  { service: serviceMap["roof-repair"] },
+  { service: serviceMap["roof-replacement"] },
+  { service: serviceMap["roof-inspections"] },
+  { service: serviceMap["emergency-roofing"] },
 ];
 
 export default function Home() {

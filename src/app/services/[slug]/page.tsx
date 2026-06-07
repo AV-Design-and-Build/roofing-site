@@ -39,6 +39,10 @@ export default async function ServiceDetailPage({ params }: Props) {
     notFound();
   }
 
+  const relatedServices = (service.relatedServices ?? [])
+    .map((relatedSlug) => serviceMap[relatedSlug as keyof typeof serviceMap])
+    .filter(Boolean);
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -225,6 +229,28 @@ export default async function ServiceDetailPage({ params }: Props) {
           ))}
         </div>
       </section>
+
+      {relatedServices.length > 0 && (
+        <section className="mt-10 border border-stone-200 bg-white p-8">
+          <p className="text-sm font-bold uppercase tracking-[0.24em] text-[#b88a44]">Related services</p>
+          <h2 className="mt-3 text-3xl font-extrabold text-[#10233c]">Explore related roofing services.</h2>
+          <div className="mt-6 grid gap-5 sm:grid-cols-2">
+            {relatedServices.map((related) => (
+              <Link
+                key={related.slug}
+                href={`/services/${related.slug}`}
+                className="group border border-stone-200 bg-[#f8f4ec] p-6 transition hover:border-[#b88a44]"
+              >
+                <h3 className="text-xl font-extrabold text-[#10233c]">{related.title}</h3>
+                <p className="mt-3 leading-7 text-slate-600">{related.excerpt}</p>
+                <span className="mt-4 inline-block text-sm font-bold uppercase tracking-[0.12em] text-[#b88a44] transition group-hover:text-[#10233c]">
+                  View {related.shortLabel} →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="mt-12 border border-stone-200 bg-[linear-gradient(135deg,#10233c_0%,#173150_70%,#b88a44_100%)] p-8 text-white lg:p-10">
         <div className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">

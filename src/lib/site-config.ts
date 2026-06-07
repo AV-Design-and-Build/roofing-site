@@ -20,6 +20,7 @@ export type Service = {
   conversionNote: string;
   metaTitle?: string;
   metaDescription?: string;
+  relatedServices?: string[];
 };
 
 export type AreaGroup = {
@@ -288,6 +289,70 @@ const services: Service[] = [
     ],
     conversionNote:
       "For commercial roofing in Los Angeles, call with the building type, roof system, leak location, access constraints, and urgency, or request a free estimate online.",
+    relatedServices: ["flat-roof-repair", "roof-repair"],
+  },
+  {
+    slug: "flat-roof-repair",
+    title: "Flat Roof Repair",
+    shortLabel: "Flat roof repair",
+    thumbnailImage: "/site/service-roof-repair.jpg",
+    heroImage: "/site/hero-commercial-roofing.jpg",
+    metaTitle: "Flat Roof Repair in Los Angeles",
+    metaDescription:
+      "Flat roof repair in Los Angeles from Rise Roofing — low-slope, membrane, seam, and ponding-water repair for commercial and residential flat roofs. Call (818) 714-7330 for a free estimate.",
+    excerpt:
+      "Flat roof repair in Los Angeles — low-slope, membrane, seam, and ponding-water repair for commercial and residential flat roofs.",
+    heroTitle: "Flat roof repair in Los Angeles for low-slope and flat roofs",
+    summary:
+      "Rise Roofing provides flat roof repair in Los Angeles for low-slope and flat roofs on homes and commercial buildings. Flat roofs fail differently than sloped roofs: leaks tend to start at seams, flashing, drains, or low spots where ponding water sits after rain. Every conversation stays clear about the membrane system, where water is getting in, and whether a targeted repair or a longer-term plan is the honest next step.",
+    bullets: [
+      "Flat and low-slope roof repair across Los Angeles",
+      "Membrane, seam, flashing, and ponding-water repair",
+      "Repair for both commercial and residential flat roofs",
+    ],
+    symptoms: [
+      "Ponding water that lingers on a flat or low-slope roof after rain",
+      "Blisters, splits, or open seams on a TPO, modified-bitumen, or built-up membrane",
+      "Leaks near drains, scuppers, parapet walls, skylights, or roof penetrations",
+      "Cracking, alligatoring, or worn coatings on an aging flat roof",
+    ],
+    process: [
+      "Confirm the flat-roof leak, ponding area, or membrane concern by phone",
+      "Inspect the low-slope surface, seams, flashing, drains, and penetrations",
+      "Explain the likely cause and a targeted flat-roof repair scope",
+      "Complete the approved repair and document what was addressed",
+    ],
+    faqs: [
+      {
+        question: "Does Rise Roofing handle flat roof repair in Los Angeles?",
+        answer:
+          "Yes. Rise Roofing handles flat roof repair in Los Angeles and nearby cities for low-slope and flat roofs, including TPO, modified bitumen, and built-up membrane systems on both commercial and residential properties.",
+      },
+      {
+        question: "What causes leaks on a flat or low-slope roof?",
+        answer:
+          "Flat and low-slope roof leaks usually start at open seams, failed flashing, cracked membrane, clogged drains, or ponding water that sits on the roof after rain. A flat roof repair inspection traces the source before the water spreads.",
+      },
+      {
+        question: "Can you fix ponding water on a flat roof?",
+        answer:
+          "Yes. Ponding water on a flat roof points to drainage, slope, or low-spot problems. The repair conversation looks at drains, scuppers, tapered areas, and membrane condition so standing water has a path off the roof instead of soaking into the system.",
+      },
+      {
+        question: "Do you repair both commercial and residential flat roofs?",
+        answer:
+          "Yes. Flat and low-slope roofs show up on Los Angeles homes, room additions, garages, retail spaces, and office buildings. Rise Roofing repairs flat roofs on commercial and residential properties and can explain whether repair or replacement makes more sense.",
+      },
+      ...sharedServiceFaqs,
+    ],
+    proofPoints: [
+      "Flat-roof copy emphasizes low-slope systems, membrane condition, ponding, and drainage clarity.",
+      "The template leaves room for real Los Angeles flat-roof project photos once available.",
+      "Phone CTAs help owners and property managers describe ponding or membrane leaks quickly.",
+    ],
+    conversionNote:
+      "For flat roof repair in Los Angeles, call with the roof type, the leak or ponding location, and how the building is used, or request a free estimate online.",
+    relatedServices: ["commercial-roofing", "roof-repair"],
   },
   {
     slug: "roof-inspections",
