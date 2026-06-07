@@ -21,8 +21,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: service.title,
-    description: `${service.title} from ${siteConfig.businessName} in ${siteConfig.primaryCity} and nearby California service areas. Call ${siteConfig.phoneDisplay} for a free estimate conversation.`,
+    title: service.metaTitle ?? service.title,
+    description:
+      service.metaDescription ??
+      `${service.title} from ${siteConfig.businessName} in ${siteConfig.primaryCity} and nearby California service areas. Call ${siteConfig.phoneDisplay} for a free estimate conversation.`,
     alternates: {
       canonical: `/services/${service.slug}`,
     },
