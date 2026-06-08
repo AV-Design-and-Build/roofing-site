@@ -26,6 +26,9 @@
 /tmp
 .firecrawl/
 
+# local agent worktrees/state (never track or deploy)
+.claude/
+
 # local/generated skill exports
 .agents/skills/google-ads-*
 .agents/skills/shots/
