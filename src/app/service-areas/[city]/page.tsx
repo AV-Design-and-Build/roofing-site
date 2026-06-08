@@ -44,6 +44,7 @@ export default async function CityPage({ params }: Props) {
         name: siteConfig.businessName,
         url: siteConfig.siteUrl,
         telephone: siteConfig.phoneE164,
+        address: siteConfig.businessAddress,
         areaServed: {
           "@type": "City",
           name: city.city,
@@ -67,6 +68,7 @@ export default async function CityPage({ params }: Props) {
           "@type": "RoofingContractor",
           name: siteConfig.businessName,
           telephone: siteConfig.phoneE164,
+          address: siteConfig.businessAddress,
         },
         areaServed: {
           "@type": "City",

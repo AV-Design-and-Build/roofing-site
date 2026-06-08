@@ -15,6 +15,7 @@ const jsonLd = {
       description: siteConfig.metaDescription,
       url: siteConfig.siteUrl,
       telephone: siteConfig.phoneE164,
+      address: siteConfig.businessAddress,
       logo: `${siteConfig.siteUrl}${siteConfig.brand.primaryLogo}`,
       image: `${siteConfig.siteUrl}/site/og-rise-roofing.jpg`,
       areaServed: siteConfig.allCities.map((city) => ({

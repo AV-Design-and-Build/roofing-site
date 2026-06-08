@@ -18,6 +18,7 @@ export default function ReviewsPage() {
     name: siteConfig.businessName,
     url: siteConfig.siteUrl,
     telephone: siteConfig.phoneE164,
+    address: siteConfig.businessAddress,
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: siteConfig.reviewRating,

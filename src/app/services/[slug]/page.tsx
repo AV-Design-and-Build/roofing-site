@@ -57,6 +57,7 @@ export default async function ServiceDetailPage({ params }: Props) {
           name: siteConfig.businessName,
           url: siteConfig.siteUrl,
           telephone: siteConfig.phoneE164,
+          address: siteConfig.businessAddress,
         },
         areaServed: siteConfig.cityPages.map((city) => ({
           "@type": "City",

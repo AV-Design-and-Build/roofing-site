@@ -83,6 +83,13 @@ const productionSiteUrl = "https://riseroofingav.com";
 
 const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? productionSiteUrl).replace(/\/$/, "");
 
+const businessAddress = {
+  "@type": "PostalAddress",
+  addressLocality: "Los Angeles",
+  addressRegion: "CA",
+  addressCountry: "US",
+};
+
 const googleBusinessProfileUrl = "https://share.google/Jbeck6wakyPavHWgz";
 const instagramUrl = "https://www.instagram.com/rise_roofing_";
 const socialProfiles = [googleBusinessProfileUrl, instagramUrl];
@@ -1541,6 +1548,7 @@ export const siteConfig = {
   alternateNames: ["Rise Roof", "Rise Roofing AV"],
   primaryCity: "Los Angeles",
   state: "CA",
+  businessAddress,
   audience: "Residential & commercial roofing",
   phoneDisplay: "(818) 714-7330",
   phoneE164: "+18187147330",
