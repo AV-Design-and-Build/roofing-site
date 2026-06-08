@@ -101,6 +101,83 @@ export function SiteFooter() {
       </div>
 
       <div className="border-t border-white/10">
+        <nav
+          aria-label="Footer site navigation"
+          className="mx-auto grid max-w-7xl gap-10 px-6 py-12 sm:grid-cols-2 lg:grid-cols-4 lg:px-8"
+        >
+          <div>
+            <h3 className="text-sm font-bold uppercase tracking-[0.24em] text-[#f2d19b]">Services</h3>
+            <ul className="mt-5 space-y-3 text-sm text-slate-300">
+              {siteConfig.services.map((service) => (
+                <li key={service.slug}>
+                  <Link href={`/services/${service.slug}`} className="transition hover:text-white">
+                    {service.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-sm font-bold uppercase tracking-[0.24em] text-[#f2d19b]">Service Areas</h3>
+            <ul className="mt-5 space-y-3 text-sm text-slate-300">
+              {siteConfig.cityPages.map((city) => (
+                <li key={city.slug}>
+                  <Link href={`/service-areas/${city.slug}`} className="transition hover:text-white">
+                    {city.city}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-sm font-bold uppercase tracking-[0.24em] text-[#f2d19b]">Company</h3>
+            <ul className="mt-5 space-y-3 text-sm text-slate-300">
+              <li>
+                <Link href="/" className="transition hover:text-white">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/services" className="transition hover:text-white">
+                  Roofing Services
+                </Link>
+              </li>
+              <li>
+                <Link href="/reviews" className="transition hover:text-white">
+                  Reviews
+                </Link>
+              </li>
+              <li>
+                <Link href="/estimate" className="transition hover:text-white">
+                  Request Estimate
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog" className="transition hover:text-white">
+                  Blog
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-sm font-bold uppercase tracking-[0.24em] text-[#f2d19b]">Projects</h3>
+            <ul className="mt-5 space-y-3 text-sm text-slate-300">
+              {siteConfig.projectProofPages.map((project) => (
+                <li key={project.slug}>
+                  <Link href={`/projects/${project.slug}`} className="transition hover:text-white">
+                    {project.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col gap-2 px-6 py-5 text-sm text-slate-400 lg:flex-row lg:items-center lg:justify-between lg:px-8">
           <p>© 2026 {siteConfig.businessName}. All rights reserved.</p>
           <p>Built for local trust and direct estimate calls.</p>

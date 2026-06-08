@@ -992,7 +992,7 @@ const blogPosts: BlogPost[] = [
   },
   {
     slug: "roof-replacement-vs-repair",
-    title: "Roof Replacement vs. Roof Repair: How to Think About the Choice",
+    title: "Roof Replacement vs. Roof Repair Explained",
     description:
       "How homeowners can compare roof repair and roof replacement when leaks, age, storm damage, or recurring issues make the answer unclear.",
     excerpt:
@@ -1332,7 +1332,7 @@ const blogPosts: BlogPost[] = [
   },
   {
     slug: "commercial-roofing-los-angeles-guide",
-    title: "Commercial Roofing in Los Angeles: A Property Manager's Guide",
+    title: "Commercial Roofing in Los Angeles: A Guide",
     description: "A practical guide to commercial roofing in Los Angeles: flat and low-slope systems, common roof problems, tenant-aware scheduling, and repair vs. replacement.",
     excerpt: "What makes commercial roofs different, the problems LA buildings see most, and how to plan repairs around tenants and business hours.",
     category: "Commercial roofing",
