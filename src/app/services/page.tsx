@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Roofing Services",
   description:
     "Explore roof repair, roof replacement, inspections, emergency roofing, storm damage roofing, and residential and commercial roofing services from Rise Roofing.",
+  alternates: {
+    canonical: "/services",
+  },
 };
 
 export default function ServicesPage() {
