@@ -43,6 +43,8 @@ export default async function ServiceDetailPage({ params }: Props) {
     .map((relatedSlug) => serviceMap[relatedSlug as keyof typeof serviceMap])
     .filter(Boolean);
 
+  const guides = siteConfig.blogPosts.filter((post) => post.relatedServices?.includes(service.slug));
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -246,6 +248,28 @@ export default async function ServiceDetailPage({ params }: Props) {
                 <p className="mt-3 leading-7 text-slate-600">{related.excerpt}</p>
                 <span className="mt-4 inline-block text-sm font-bold uppercase tracking-[0.12em] text-[#b88a44] transition group-hover:text-[#10233c]">
                   View {related.shortLabel} →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {guides.length > 0 && (
+        <section className="mt-10 border border-stone-200 bg-white p-8">
+          <p className="text-sm font-bold uppercase tracking-[0.24em] text-[#b88a44]">Roofing guides</p>
+          <h2 className="mt-3 text-3xl font-extrabold text-[#10233c]">Read up before you call.</h2>
+          <div className="mt-6 grid gap-5 sm:grid-cols-2">
+            {guides.map((guide) => (
+              <Link
+                key={guide.slug}
+                href={`/blog/${guide.slug}`}
+                className="group border border-stone-200 bg-[#f8f4ec] p-6 transition hover:border-[#b88a44]"
+              >
+                <h3 className="text-xl font-extrabold text-[#10233c]">{guide.title}</h3>
+                <p className="mt-3 leading-7 text-slate-600">{guide.excerpt}</p>
+                <span className="mt-4 inline-block text-sm font-bold uppercase tracking-[0.12em] text-[#b88a44] transition group-hover:text-[#10233c]">
+                  Read the guide →
                 </span>
               </Link>
             ))}

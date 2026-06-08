@@ -58,6 +58,7 @@ export type BlogPost = {
     body: string[];
   }[];
   faqs: FaqItem[];
+  relatedServices?: string[];
   relatedLinks?: {
     href: string;
     label: string;
@@ -989,6 +990,21 @@ const blogPosts: BlogPost[] = [
           "Yes. Emergency and storm repair messaging is approved, and urgent roofing problems should start with a phone call.",
       },
     ],
+    relatedServices: ["roof-repair", "roof-inspections"],
+    relatedLinks: [
+      {
+        href: "/blog/roof-leak-repair-cost-los-angeles",
+        label: "How Much Does It Cost to Repair a Roof Leak?",
+      },
+      {
+        href: "/blog/roof-replacement-vs-repair",
+        label: "Roof Replacement vs. Roof Repair Explained",
+      },
+      {
+        href: "/blog/how-long-does-a-roof-replacement-take",
+        label: "How Long Does a Roof Replacement Take?",
+      },
+    ],
   },
   {
     slug: "roof-replacement-vs-repair",
@@ -1034,6 +1050,21 @@ const blogPosts: BlogPost[] = [
         question: "Can storm damage force replacement?",
         answer:
           "Sometimes storm damage can be widespread enough to make replacement planning necessary, but that should be based on inspection findings rather than assumption.",
+      },
+    ],
+    relatedServices: ["roof-replacement", "roof-repair"],
+    relatedLinks: [
+      {
+        href: "/blog/roof-repair-cost-los-angeles",
+        label: "What Affects Roof Repair Cost in Los Angeles?",
+      },
+      {
+        href: "/blog/how-long-does-a-roof-replacement-take",
+        label: "How Long Does a Roof Replacement Take?",
+      },
+      {
+        href: "/blog/signs-you-need-a-roof-inspection",
+        label: "Signs You Need a Roof Inspection",
       },
     ],
   },
@@ -1083,6 +1114,21 @@ const blogPosts: BlogPost[] = [
           "Active leaks, exposed roof sections, fast-spreading stains, storm impact, and unsafe roof conditions should be treated as urgent.",
       },
     ],
+    relatedServices: ["emergency-roofing", "roof-leak-repair"],
+    relatedLinks: [
+      {
+        href: "/blog/how-to-repair-a-roof-leak",
+        label: "How to Repair a Roof Leak: A Safety-First Guide",
+      },
+      {
+        href: "/blog/roof-leak-repair-cost-los-angeles",
+        label: "How Much Does It Cost to Repair a Roof Leak?",
+      },
+      {
+        href: "/blog/signs-you-need-a-roof-inspection",
+        label: "Signs You Need a Roof Inspection",
+      },
+    ],
   },
   {
     slug: "signs-you-need-a-roof-inspection",
@@ -1130,6 +1176,21 @@ const blogPosts: BlogPost[] = [
           "Yes. Inspection findings can help shape the repair or replacement estimate conversation.",
       },
     ],
+    relatedServices: ["roof-inspections", "storm-damage-roofing"],
+    relatedLinks: [
+      {
+        href: "/blog/roof-replacement-vs-repair",
+        label: "Roof Replacement vs. Roof Repair Explained",
+      },
+      {
+        href: "/blog/how-to-repair-a-roof-leak",
+        label: "How to Repair a Roof Leak: A Safety-First Guide",
+      },
+      {
+        href: "/blog/commercial-roofing-los-angeles-guide",
+        label: "Commercial Roofing in Los Angeles: A Guide",
+      },
+    ],
   },
   {
     slug: "how-long-does-a-roof-replacement-take",
@@ -1175,6 +1236,21 @@ const blogPosts: BlogPost[] = [
         question: "Should I call if I need replacement quickly?",
         answer:
           "Yes. Call first if timing is urgent because phone is the fastest way to discuss scheduling constraints.",
+      },
+    ],
+    relatedServices: ["roof-replacement", "residential-roofing"],
+    relatedLinks: [
+      {
+        href: "/blog/roof-replacement-vs-repair",
+        label: "Roof Replacement vs. Roof Repair Explained",
+      },
+      {
+        href: "/blog/roof-repair-cost-los-angeles",
+        label: "What Affects Roof Repair Cost in Los Angeles?",
+      },
+      {
+        href: "/blog/commercial-roofing-los-angeles-guide",
+        label: "Commercial Roofing in Los Angeles: A Guide",
       },
     ],
   },
@@ -1239,6 +1315,7 @@ const blogPosts: BlogPost[] = [
         answer: "Financing can be discussed when a leak repair is larger than expected, and for storm-related leaks Rise Roofing can help you understand what photos and information may support an insurance claim. We never promise a claim outcome, since that decision belongs to your insurer.",
       },
     ],
+    relatedServices: ["roof-leak-repair", "roof-repair"],
     relatedLinks: [
       {
         href: "/services/roof-repair",
@@ -1251,6 +1328,14 @@ const blogPosts: BlogPost[] = [
       {
         href: "/estimate",
         label: "Request a free roof leak repair estimate",
+      },
+      {
+        href: "/blog/how-to-repair-a-roof-leak",
+        label: "How to Repair a Roof Leak: A Safety-First Guide",
+      },
+      {
+        href: "/blog/roof-repair-cost-los-angeles",
+        label: "What Affects Roof Repair Cost in Los Angeles?",
       },
     ],
   },
@@ -1315,6 +1400,7 @@ const blogPosts: BlogPost[] = [
         answer: "A patch usually fails because it was placed where the water shows up rather than where it actually enters, since water travels along the roof structure before dripping. A proper repair finds the real source and addresses any underlying damage to the flashing, underlayment, or deck.",
       },
     ],
+    relatedServices: ["roof-leak-repair", "roof-repair"],
     relatedLinks: [
       {
         href: "/services/roof-repair",
@@ -1327,6 +1413,14 @@ const blogPosts: BlogPost[] = [
       {
         href: "/estimate",
         label: "Request a free roof leak repair estimate",
+      },
+      {
+        href: "/blog/emergency-roof-leak-what-to-do",
+        label: "Emergency Roof Leak: What to Do Before You Call",
+      },
+      {
+        href: "/blog/roof-leak-repair-cost-los-angeles",
+        label: "How Much Does It Cost to Repair a Roof Leak?",
       },
     ],
   },
@@ -1391,6 +1485,7 @@ const blogPosts: BlogPost[] = [
         answer: "Yes. Commercial scheduling is planned around retail hours, office occupancy, roof access, and tenant disruption, and immediate stabilization can be separated from work that fits your operating schedule. Property managers can also request documentation to share with owners and tenants.",
       },
     ],
+    relatedServices: ["commercial-roofing", "flat-roof-repair"],
     relatedLinks: [
       {
         href: "/services/commercial-roofing",
@@ -1403,6 +1498,14 @@ const blogPosts: BlogPost[] = [
       {
         href: "/estimate",
         label: "Get a free commercial roofing estimate",
+      },
+      {
+        href: "/blog/how-long-does-a-roof-replacement-take",
+        label: "How Long Does a Roof Replacement Take?",
+      },
+      {
+        href: "/blog/roof-replacement-vs-repair",
+        label: "Roof Replacement vs. Roof Repair Explained",
       },
     ],
   },
